@@ -1,0 +1,33 @@
+@import "variables.scss";
+
+// https://stackoverflow.com/a/14424029
+
+.tree {
+  &, ul {
+    padding: 0;
+  }
+
+  li {
+    margin-left: 1.4rem;
+    border-left: 2px solid $c-text;
+    list-style: none;
+    &:last-child {
+      border-left: 2px solid transparent;
+    }
+
+    .node {
+      padding-left: 1rem;
+      position: relative;
+      &::before {
+        content: "";
+        width: 1rem;
+        position: absolute;
+        top: 0;
+        left: -2px;
+        bottom: 50%;
+        border-left: 2px solid $c-text;
+        border-bottom: 2px solid $c-text;
+      }
+    }
+  }
+}

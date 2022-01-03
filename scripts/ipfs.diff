@@ -1,0 +1,11 @@
+--- a/src/routes/+page.md
++++ b/src/routes/+page.md
+@@ -12,7 +12,7 @@
+
+ ソースコードは<a href="/src.tgz" rel="external">こちら</a>から取得できます。
+
+-**New :** 最近流行りのIPFSに置いてみました。
++**New :** 最近流行りのIPFSに置いてみました。このページはIPFSから取得されています。
+
+ - ゲートウェイに[cloudflare-ipfs.com](https://www.cloudflare.com/distributed-web-gateway/)を使用 : [ipfs.yamad.me](https://ipfs.yamad.me)
+
