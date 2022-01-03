@@ -26,5 +26,5 @@
   <meta property="og:url"         content="https://yamad.me{$page.url.pathname}" />
   <meta property="og:image"       content="https://yamad.me/icon.png" />
   <meta property="og:description" content="{description}" />
-  <meta property="og:site_name"   content="yamad.me" />
+  <meta property="og:site_name"   content="YamaD.me" />
 </svelte:head>

@@ -1,5 +1,5 @@
 ---
-title: yamad.me
+title: YamaD.me
 description: YamaD's website
 noTitleFormat: true
 ---
