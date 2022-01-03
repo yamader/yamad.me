@@ -9,6 +9,6 @@
     <slot />
   </main>
   <footer class="">
-    <small>&copy; 2020-{new Date().getFullYear()} YamaD</small>
+    <small>Copyright &copy; 2020-{new Date().getFullYear()} YamaD</small>
   </footer>
 </div>
