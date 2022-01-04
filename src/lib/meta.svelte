@@ -7,7 +7,7 @@
   export let noRobots      : bool   = false
   export let noTitleFormat : bool   = false
 
-  const destTitle = title + (noTitleFormat ? "" : " | yamad.me")
+  const destTitle = title + (noTitleFormat ? "" : " | YamaD.me")
 </script>
 
 <svelte:head>

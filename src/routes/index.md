@@ -1,13 +1,14 @@
 ---
-title: Home
+title: YamaD.me
 description: 山Dのウェブサイト
+noTitleFormat: true
 ---
 
-# Home
+# YamaD
 
 ## ようこそ
 
-なんとここは山Dのホームページです(驚愕の事実)  
+なんとここは山Dのホームページです(驚愕の事実)．  
 しかし現在は工事中です……
 
 ## なけなしのコンテンツ
