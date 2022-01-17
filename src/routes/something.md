@@ -9,6 +9,10 @@ description: なにか
 
 というか無い．
 
-## URL短縮
+## 作ったもの・サービス
 
-[1lil.li](https://1lil.li/s/)
+- URL短縮 : [1lil.li](https://1lil.li/s/)
+
+## 作っているもの
+
+- 

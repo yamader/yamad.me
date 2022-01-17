@@ -9,13 +9,15 @@ noTitleFormat: true
 ## ようこそ
 
 なんとここは山Dのホームページです(驚愕の事実)．  
-しかし現在は工事中です……
 
 ## Contacts
 
 - E-mail : [me(at)dyama.net](https://me.dyama.net)
+- Twitter : [@_yamader](https://twitter.com/_yamader)
 
 ## PGP public key
+
+特に鍵サーバーとかには上げてないです．
 
 Fingerprint : `0E3E 1098 B312 9A37 AFE6 A5CF 596E 6A41 B551 7736`
 
@@ -47,7 +49,7 @@ v2EDj1V+GXzxr4dV22ZIgDziBh5gvIlwJu3kDw==
 
 [/pub.asc](/pub.asc)からでも取得できます．
 
-## 乞食
+## Donate
 
 - Bitcoin : `bc1qyq8mdpl3qk6s5y98jsjzcvrkz9cmjcvpf75dhs`
 - 干し芋 : [amazon.co.jp](https://wish.dyama.net)
