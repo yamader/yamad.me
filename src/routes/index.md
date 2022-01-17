@@ -11,23 +11,6 @@ noTitleFormat: true
 なんとここは山Dのホームページです(驚愕の事実)．  
 しかし現在は工事中です……
 
-## なけなしのコンテンツ
-
-というか無い．
-
-## 山Dについて
-
-[/about/](/about/)に書きました．
-
-## なんか
-
-- [1lil.li](https://1lil.li/s/) : 短縮URL
-
-## 乞食
-
-- Bitcoin : `bc1qyq8mdpl3qk6s5y98jsjzcvrkz9cmjcvpf75dhs`
-- 干し芋 : [amazon.co.jp](https://wish.dyama.net)
-
 ## Contacts
 
 - E-mail : [me(at)dyama.net](https://me.dyama.net)
@@ -63,3 +46,8 @@ v2EDj1V+GXzxr4dV22ZIgDziBh5gvIlwJu3kDw==
 ```
 
 [/pub.asc](/pub.asc)からでも取得できます．
+
+## 乞食
+
+- Bitcoin : `bc1qyq8mdpl3qk6s5y98jsjzcvrkz9cmjcvpf75dhs`
+- 干し芋 : [amazon.co.jp](https://wish.dyama.net)
