@@ -1,6 +1,11 @@
-@import "lib/fonts.css";
+@import "sanitize.css";
+@import "sanitize.css/assets.css";
+@import "sanitize.css/typography.css";
+@import "sanitize.css/reduce-motion.css";
+@import "sanitize.css/system-ui.css";
+@import "sanitize.css/ui-monospace.css";
 
-@tailwind base;
+/*@import "lib/fonts.css";*/
 
 body {
   /*@apply ;*/
@@ -39,10 +44,6 @@ a {
   @apply text-cyan-600 no-underline hover:underline;
 }
 
-@tailwind components;
-
 .container {
   @apply md:max-w-screen-md md:my-8 p-4;
 }
-
-@tailwind utilities;
