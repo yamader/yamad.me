@@ -34,7 +34,12 @@ ul {
 }
 
 a {
-  @apply text-cyan-600 no-underline hover:underline;
+  color: $c-link;
+  font-weight: bolder;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /* Container */
@@ -52,10 +57,10 @@ a {
   border-radius: 8px;
 
   @include bpMqUp(lg) {
+    margin: 0;
     border: none;
   }
   @include bpMqUp(sm) {
-    margin: 0;
     padding: 5%;
     max-width: 100%;
   }
