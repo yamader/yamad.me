@@ -7,17 +7,10 @@ body {
 }
 
 h1 {
-  @apply text-4xl font-bold;
-}
-h2 {
-  @apply my-4 text-3xl font-bold;
-}
-
-p {
+  font-weight: bolder;
 }
 
 pre {
-  /*@apply ;*/
   /*
   font-size: 16px;
   font-family: var(--font-mono);
@@ -28,9 +21,6 @@ pre {
   overflow-x: auto;
   color: var(--text-color);
 */
-}
-
-ul {
 }
 
 a {
