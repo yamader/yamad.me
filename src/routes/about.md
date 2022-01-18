@@ -5,6 +5,8 @@ description: 山Dについて
 
 <script>
   import Contacts from "$lib/contacts.md"
+
+  const birthYear = 2005
   let year = new Date().getFullYear()
 </script>
 
@@ -28,7 +30,8 @@ description: 山Dについて
 ## 年齢
 
 西暦<input type=number bind:value={year} class="yearNum" />年において，
-山Dは{#if year < 2005}まだ生まれていません．{:else}<strong>{year-2005}</strong>歳です．{/if}
+山Dは{#if year < birthYear}まだ生まれていません．{:else}<strong>{year-birthYear}</strong>歳です．{/if}
+{#if (year-birthYear) > 200}おそらく死んでいます．{/if}
 
 ## やったこと
 
