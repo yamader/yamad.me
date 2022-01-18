@@ -9,7 +9,7 @@ description: 山Dについて
 
 <style lang="scss">
   input.yearNum {
-    width: 6em;
+    width: 8em;
     margin: 0 .5em;
     padding: .5em;
   }
