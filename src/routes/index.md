@@ -26,10 +26,11 @@ noTitleFormat: true
 <details><summary class="h2">PGP public key</summary>
 
 特に鍵サーバーとかには上げてないです．
+[/pub.asc](/pub.asc)からでも取得できます．
 
 Fingerprint :
 ```
-0E3E 1098 B312 9A37 AFE6 A5CF 596E 6A41 B551 7736
+0E3E 1098 B312 9A37 AFE6  A5CF 596E 6A41 B551 7736
 ```
 
 ```
@@ -57,7 +58,5 @@ v2EDj1V+GXzxr4dV22ZIgDziBh5gvIlwJu3kDw==
 =EWSU
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-
-[/pub.asc](/pub.asc)からでも取得できます．
 
 </details>
