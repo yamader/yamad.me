@@ -1,13 +1,31 @@
 @import "styles/sanitize.scss";
 @import "styles/responsive.scss";
 @import "styles/colors.scss";
-/*@import "styles/fonts.scss";*/
+//@import "styles/fonts.scss";
 
 body {
 }
 
 h1 {
   font-weight: bolder;
+}
+h2 {
+  // counter-increment: h2;
+  // &::before {
+  //   margin-right: .5em;
+  //   content: counter(h2);
+  // }
+}
+h3 {
+  // counter-increment: h3;
+  // &::before {
+  //   margin-right: .5em;
+  //   content: counter(h2)"."counter(h3);
+  // }
+}
+
+hr {
+  margin: 1.5rem auto;
 }
 
 pre {
@@ -55,8 +73,8 @@ a {
     max-width: 100%;
   }
 
-  hr {
-    margin: .8rem auto;
+  & > hr {
+    margin: 0.8rem auto;
     width: 80%;
     @include bpMqUp(lg) {
       width: 95%;
@@ -126,11 +144,20 @@ a {
 
 /* Main */
 main {
+  margin-bottom: 1rem;
   padding: 0 15%;
-  @include bpMqUp(xl) { padding: 0 12% }
-  @include bpMqUp(lg) { padding: 0 10% }
-  @include bpMqUp(md) { padding: 0 5% }
-  @include bpMqUp(sm) { padding: 0 }
+  @include bpMqUp(xl) {
+    padding: 0 12%;
+  }
+  @include bpMqUp(lg) {
+    padding: 0 10%;
+  }
+  @include bpMqUp(md) {
+    padding: 0 5%;
+  }
+  @include bpMqUp(sm) {
+    padding: 0;
+  }
 }
 
 /* Footer */

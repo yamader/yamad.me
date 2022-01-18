@@ -4,6 +4,10 @@ description: 山Dのウェブサイト
 noTitleFormat: true
 ---
 
+<script>
+  import Contacts from "$lib/contacts.md"
+</script>
+
 # YamaD
 
 ## ようこそ
@@ -12,8 +16,7 @@ noTitleFormat: true
 
 ## Contacts
 
-- E-mail : [me(at)dyama.net](https://me.dyama.net)
-- Twitter : [@_yamader](https://twitter.com/_yamader)
+<Contacts />
 
 ## PGP public key
 

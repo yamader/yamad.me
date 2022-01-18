@@ -4,14 +4,20 @@ description: 山Dについて
 ---
 
 <script>
+  import Contacts from "$lib/contacts.md"
   let year = new Date().getFullYear()
 </script>
 
 <style lang="scss">
-  input.yearNum {
+  .yearNum {
     width: 8em;
     margin: 0 .5em;
     padding: .5em;
+  }
+  .nichaa {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    user-select: none;
   }
 </style>
 
@@ -33,33 +39,38 @@ description: 山Dについて
 
 [/something/](/something/)に書いてあるかもしれません．
 
-## 使う言語 (使えるとは言ってない)
+## リンク
+
+- GitHub: [@yamader](https://github.com/yamader)
+
+<Contacts />
+
+## 使える言語 (使えるとは言ってない)
 
 - C
 - D
 - JavaScript/TypeScript (React/Vue/Svelte)
 - Python
 
-## 使うディストロ
+<details><summary class="nichaa">その他</summary>
 
-- Gentoo Linux
-- Debian GNU/Linux
-
-## マシン
-
-- Core 8500/DDR4 64G/GeForce 1070 Ti デスクトップ
-- Core 1165G7/DDR4 16G/Iris Xe ラップトップ
-- Ryzen 3100/DDR4 16G デスクトップ(サーバー)
-- その他がらくた
-
-## 環境
+### 環境
 
 - デスクトップ環境 : dwm / fcitx-skk
 - エディタ : SublimeText / Vim
 - Twitter : TweetDeck / Twitter for Android
 - キーボード : HHKB Professional HYBRID / HHKB Professional2
 
-## その他リンク
+### ディストロ
 
-- GitHub: [@yamader](https://github.com/yamader)
-- Twitter: [@_yamader](https://twitter.com/_yamader)
+- Gentoo Linux
+- Debian GNU/Linux
+
+### マシン
+
+- Core 8500/DDR4 64G/GeForce 1070 Ti デスクトップ
+- Core 1165G7/DDR4 16G/Iris Xe ラップトップ
+- Ryzen 3100/DDR4 16G デスクトップ(サーバー)
+- その他がらくた
+
+</details>
