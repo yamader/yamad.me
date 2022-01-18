@@ -14,11 +14,6 @@ description: 山Dについて
     margin: 0 .5em;
     padding: .5em;
   }
-  .nichaa {
-    font-size: 1.5rem;
-    font-weight: bolder;
-    user-select: none;
-  }
 </style>
 
 # About
@@ -52,7 +47,7 @@ description: 山Dについて
 - JavaScript/TypeScript (React/Vue/Svelte)
 - Python
 
-<details><summary class="nichaa">その他</summary>
+<details><summary class="h2">その他</summary>
 
 ### 環境
 

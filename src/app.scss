@@ -29,16 +29,10 @@ hr {
 }
 
 pre {
-  /*
-  font-size: 16px;
-  font-family: var(--font-mono);
-  background-color: rgba(255, 255, 255, 0.45);
-  border-radius: 3px;
-  box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-  padding: 0.5em;
+  padding: 1.2em 1em;
+  background: gainsboro;
+  border-radius: 4px;
   overflow-x: auto;
-  color: var(--text-color);
-*/
 }
 
 a {
@@ -50,7 +44,7 @@ a {
   }
 }
 
-/* Container */
+/* Components */
 
 .container {
   display: flex;
@@ -83,6 +77,12 @@ a {
       width: 100%;
     }
   }
+}
+
+summary.h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  user-select: none;
 }
 
 /* Header */
