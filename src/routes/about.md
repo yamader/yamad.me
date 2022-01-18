@@ -3,9 +3,15 @@ title: About
 description: 山Dについて
 ---
 
-<script>
-  import Contacts from "$lib/contacts.md"
+<script context="module">
+  import contacts from "$lib/contacts.json"
+  const links = [
+    { name: "GitHub", disp: "@yamader", content: "https://github.com/yamader" },
+    ...contacts,
+  ]
+</script>
 
+<script>
   const birthYear = 2005
   let year = new Date().getFullYear()
 </script>
@@ -39,9 +45,11 @@ description: 山Dについて
 
 ## リンク
 
-- GitHub: [@yamader](https://github.com/yamader)
-
-<Contacts />
+<ul>
+  {#each links as { name, disp, content }}
+    <li>{name} : <a href={content} target="_blank" rel="external">{disp}</a></li>
+  {/each}
+</ul>
 
 ## 使える言語 (使えるとは言ってない)
 

@@ -1,3 +1,0 @@
-- E-mail : [me(at)dyama.net](https://me.dyama.net)
-- Twitter : [@_yamader](https://twitter.com/_yamader)
-- Discord : [YamaD#0142](https://discord.com/users/542656442876952586)

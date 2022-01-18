@@ -4,8 +4,8 @@ description: 山Dのウェブサイト
 noTitleFormat: true
 ---
 
-<script>
-  import Contacts from "$lib/contacts.md"
+<script context="module">
+  import contacts from "$lib/contacts.json"
 </script>
 
 # YamaD
@@ -16,7 +16,11 @@ noTitleFormat: true
 
 ## Contacts
 
-<Contacts />
+<ul>
+  {#each contacts as { name, disp, content }}
+    <li>{name} : <a href={content} target="_blank" rel="external">{disp}</a></li>
+  {/each}
+</ul>
 
 ## Donate
 
