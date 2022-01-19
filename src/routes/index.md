@@ -14,6 +14,8 @@ noTitleFormat: true
 
 なんとここは山Dのホームページです．
 
+[SvelteKit](https://kit.svelte.dev) / [mdsvex](https://mdsvex.com) / [$\KaTeX$](https://katex.org) で構築しています．
+
 ## Contacts
 
 <ul>
