@@ -64,8 +64,8 @@ description: 山Dについて
 
 - デスクトップ環境 : dwm / fcitx-skk
 - エディタ : SublimeText / Vim
-- Twitter : TweetDeck / Twitter for Android
 - キーボード : HHKB Professional HYBRID / HHKB Professional2
+- Twitter : TweetDeck / Twitter for Android
 
 ### ディストロ
 
