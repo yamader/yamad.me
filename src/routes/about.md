@@ -37,7 +37,7 @@ description: 山Dについて
 
 西暦<input type=number bind:value={year} class="yearNum" />年において，
 山Dは{#if year < birthYear}まだ生まれていません．{:else}<strong>{year-birthYear}</strong>歳です．{/if}
-{#if (year-birthYear) > 200}おそらく死んでいます．{/if}
+{#if (year-birthYear) >= 200}おそらく死んでいます．{/if}
 
 ## やったこと
 
