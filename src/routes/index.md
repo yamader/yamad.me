@@ -18,7 +18,7 @@ noTitleFormat: true
 New : 最近流行りのIPFSに置いてみました．
 
 - 普通のやつ : [http://ipfs.yamad.me](http://ipfs.yamad.me)
-- CFを介したTLS対応版 : [https://cdn.ipfs.yamad.me](https://cdn.ipfs.yamad.me)
+- CFを介したTLS対応版 : [https://cdn-ipfs.yamad.me](https://cdn-ipfs.yamad.me)
 
 ## Contacts
 
