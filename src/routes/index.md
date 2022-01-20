@@ -15,10 +15,11 @@ noTitleFormat: true
 なんとここは山Dのホームページです．
 [SvelteKit](https://kit.svelte.dev) / [mdsvex](https://mdsvex.com) / [$\KaTeX$](https://katex.org) で構築しています．
 
-New : 最近流行りのIPFSに置いてみました．
+**New :**
+最近流行りのIPFSに置いてみました．
+(URL : [ipfs.yamad.me](https://ipfs.yamad.me))  
+ゲートウェイは[cloudflare-ipfs.com](https://www.cloudflare.com/distributed-web-gateway/)を使っています．
 
-- 普通のやつ : [http://ipfs.yamad.me](http://ipfs.yamad.me)
-- CFを介したTLS対応版 : [https://cdn-ipfs.yamad.me](https://cdn-ipfs.yamad.me)
 
 ## Contacts
 
