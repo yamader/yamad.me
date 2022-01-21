@@ -55,7 +55,7 @@ description: 山Dについて
 
 - C
 - D
-- JavaScript/TypeScript (React/Vue/Svelte)
+- JavaScript / TypeScript (React/Vue/Svelte)
 - Python
 
 <details><summary class="h2">その他</summary>
@@ -74,9 +74,9 @@ description: 山Dについて
 
 ### マシン
 
-- Core 8500/DDR4 64G/GeForce 1070 Ti デスクトップ
-- Core 1165G7/DDR4 16G/Iris Xe ラップトップ
-- Ryzen 3100/DDR4 16G デスクトップ(サーバー)
+- Core 8500 / DDR4 64G / GeForce 1070 Ti デスクトップ
+- Core 1165G7 / DDR4 16G / Iris Xe ラップトップ
+- Ryzen 3100 / DDR4 16G デスクトップ(サーバー)
 - その他がらくた
 
 </details>
