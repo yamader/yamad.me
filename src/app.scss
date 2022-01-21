@@ -125,7 +125,10 @@ summary.h2 {
     color: black;
     text-align: center;
     text-decoration: none;
+    outline: none;
+
     &:hover,
+    &:focus,
     &:active,
     &.active {
       font-weight: bolder;
@@ -158,6 +161,10 @@ main {
   }
   @include bpMqUp(sm) {
     padding: 0;
+  }
+
+  *:focus {
+    outline-style: auto;
   }
 }
 
