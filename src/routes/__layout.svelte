@@ -44,8 +44,8 @@
     padding: 16px 32px;
     max-width: 960px;
     flex-direction: column;
-    color: black;
-    background: white;
+    color: $c-text;
+    background: $c-bg;
     border: 4px solid;
     border-radius: 8px;
     @include bpMqUp(lg) {
@@ -96,7 +96,7 @@
     li > a {
       display: inline-block;
       min-width: 6em;
-      color: black;
+      color: $c-text;
       text-align: center;
       text-decoration: none;
       &:hover,
