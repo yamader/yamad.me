@@ -44,8 +44,6 @@
     padding: 16px 32px;
     max-width: 960px;
     flex-direction: column;
-    color: $c-text;
-    background: $c-bg;
     border: 4px solid;
     border-radius: 8px;
     @include bpMqUp(lg) {

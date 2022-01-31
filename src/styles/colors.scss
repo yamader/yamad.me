@@ -3,3 +3,16 @@ $c-text: black !default;
 $c-link: orangered !default;
 $c-dimBg: whitesmoke !default;
 $c-dimText: darkslategray !default;
+
+@media (prefers-color-scheme: dark) {
+  $c-bg: #181a1b !global;
+  $c-text: #e8e6e3 !global;
+  $c-link: #ff581a !global;
+  $c-dimBg: #1e2021 !global;
+  $c-dimText: #a8cbcb !global;
+}
+
+html, body, input, textarea, select, button {
+  background-color: $c-bg;
+  color: $c-text;
+}
