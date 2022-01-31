@@ -11,8 +11,8 @@ description: なにか
 
 ## 作ったもの・サービス
 
-- URL短縮 : [1lil.li](https://1lil.li/s/)
+- [1lil.li](https://1lil.li/s/) : URL短縮
 
 ## 作っているもの
 
-- 
+- [yamadOS](https://github.com/yamader/os) : OS
