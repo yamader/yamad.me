@@ -16,3 +16,8 @@ description: なにか
 ## 作っているもの
 
 - [yamadOS](https://github.com/yamader/os) : OS
+
+## ギャラリー
+
+![broken](/assets/img/broken.jpg)
+*とある友人より*
