@@ -7,6 +7,6 @@ const dev = mode === "development"
 module.exports = {
   plugins: [
     autoprefixer,
-    !dev && cssnano({ preset: "default" }),
+    !dev && cssnano({ preset: "default" })
   ],
 }

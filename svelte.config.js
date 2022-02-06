@@ -5,10 +5,12 @@ import preprocess from "svelte-preprocess"
 
 export default {
   extensions: [".svelte", ...mdsvexConfig.extensions],
-  preprocess: [preprocess(), mdsvex(mdsvexConfig)],
+  preprocess: [
+    preprocess({ postcss: true }),
+    mdsvex(mdsvexConfig)
+  ],
   kit: {
     adapter: adapter(),
-    target: "#svelte",
     trailingSlash: "always",
   },
 }
