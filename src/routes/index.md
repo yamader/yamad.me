@@ -20,7 +20,6 @@ noTitleFormat: true
 
 - ゲートウェイに[cloudflare-ipfs.com](https://www.cloudflare.com/distributed-web-gateway/)を使用 : [ipfs.yamad.me](https://ipfs.yamad.me)
 
-
 ## Contacts
 
 <ul>

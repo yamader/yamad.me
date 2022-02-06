@@ -53,7 +53,7 @@ description: 山Dについて
 
 ## 使える言語 (使えるとは言ってない)
 
-- C
+- C / C++
 - D
 - JavaScript / TypeScript (React/Vue/Svelte)
 - Python
