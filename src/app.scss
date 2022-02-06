@@ -34,10 +34,17 @@ hr {
 }
 
 pre {
-  padding: 1.2em 1em;
+  padding: 1.2em 0;
+  $_p-x: 1em;
+  padding-left: $_p-x;
   background-color: $c-dimBg;
   border-radius: 4px;
   overflow-x: auto;
+  code::after {
+    display: inline-block;
+    width: $_p-x;
+    content: "";
+  }
 }
 
 a {
