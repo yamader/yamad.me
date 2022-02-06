@@ -55,28 +55,24 @@ description: 山Dについて
 
 - C / C++
 - D
-- JavaScript / TypeScript (React/Vue/Svelte)
+- JavaScript / TypeScript
 - Python
 
-<details><summary class="h2">その他</summary>
-
-### 環境
+## 宗派
 
 - デスクトップ環境 : dwm / fcitx-skk
 - エディタ : SublimeText / Vim
 - キーボード : HHKB Professional HYBRID / HHKB Professional2
 - Twitter : TweetDeck / Twitter for Android
 
-### ディストロ
+## ディストロ
 
 - Gentoo Linux
 - Debian GNU/Linux
 
-### マシン
+## マシン
 
 - Core 8500 / DDR4 128G / GeForce 1070 Ti デスクトップ
 - Core 1165G7 / DDR4 16G / Iris Xe ラップトップ
 - Ryzen 3100 / DDR4 16G デスクトップ(サーバー)
 - その他がらくた
-
-</details>

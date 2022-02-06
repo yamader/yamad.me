@@ -21,3 +21,8 @@ description: なにか
 
 ![broken](/assets/img/broken.jpg)
 *とある友人より*
+
+## 乞食
+
+- Bitcoin : `bc1qyq8mdpl3qk6s5y98jsjzcvrkz9cmjcvpf75dhs`
+- 干し芋 : [amazon.co.jp](https://wish.dyama.net)
