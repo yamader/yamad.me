@@ -35,7 +35,7 @@ noTitleFormat: true
 ```
 % gpg --fetch-keys https://yamad.me/pub.asc
 もしくは
-% gpg --locate-external-keys --auto-key-locate wkd,cert me(at)dyama.net
+% gpg --locate-keys me(at)dyama.net
 ```
 
 Fingerprint :
