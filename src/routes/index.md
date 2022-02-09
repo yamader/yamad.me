@@ -28,7 +28,7 @@ noTitleFormat: true
   {/each}
 </ul>
 
-## PGP Public Key
+## OpenPGP Public Key
 
 <a href="/pub.asc" rel="external">/pub.asc</a>，WKD，CERTから取得できます．ご入用の際にどうぞ．
 
@@ -44,4 +44,4 @@ Fingerprint :
 0E3E 1098 B312 9A37 AFE6  A5CF 596E 6A41 B551 7736
 ```
 
-<a href="openpgp4fpr:0E3E1098B3129A37AFE6A5CF596E6A41B5517736" rel="external">openpgp4fpr:0E3E1098B3129A37AFE6A5CF596E6A41B5517736</a>
+- <a href="openpgp4fpr:0E3E1098B3129A37AFE6A5CF596E6A41B5517736" rel="external">0E3E1098B3129A37AFE6A5CF596E6A41B5517736</a>
