@@ -28,7 +28,7 @@ noTitleFormat: true
   {/each}
 </ul>
 
-## OpenPGP Public Key
+## PGP Public Key
 
 <a href="/pub.asc" rel="external">/pub.asc</a>，WKD，CERTから取得できます．ご入用の際にどうぞ．
 
