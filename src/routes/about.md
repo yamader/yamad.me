@@ -55,6 +55,7 @@ description: 山Dについて
 
 - C / C++
 - D
+- OCaml
 - JavaScript / TypeScript
 - Python
 
