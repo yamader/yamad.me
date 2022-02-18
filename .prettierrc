@@ -1,5 +1,6 @@
 {
   "printWidth": 198,
+  "bracketSameLine": true,
   "semi": false,
   "singleQuote": false
 }
