@@ -10,7 +10,7 @@
   ]
 
   // Konami Code
-  if (browser) {
+  if(browser) {
     const command = [
       "ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a",
     ]
