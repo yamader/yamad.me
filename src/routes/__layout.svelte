@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from "$app/stores"
+  import { browser } from "$app/env"
   import "../app.scss"
 
   const navLinks = [
@@ -7,6 +8,24 @@
     { path: "/about/", name: "About" },
     { path: "/something/", name: "Something" },
   ]
+
+  // Konami Code
+  if (browser) {
+    const command = [
+      "ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a",
+    ]
+    let cur = 0
+    addEventListener("keydown", e => {
+      if(e.key == command[cur++]) {
+        if(cur == command.length) {
+          for(let i=0; i<2; ++i) alert("そのうち何か作ります")
+          while(true) alert("逮捕")
+        }
+      } else {
+        cur = 0
+      }
+    })
+  }
 </script>
 
 <div class="container">
