@@ -11,6 +11,9 @@ export default {
   ],
   kit: {
     adapter: adapter(),
+    prerender: {
+      onError: "continue",
+    },
     trailingSlash: "always",
   },
 }
