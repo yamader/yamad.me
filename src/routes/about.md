@@ -61,15 +61,11 @@ description: 山Dについて
 
 ## 宗派
 
+- ディストロ : Gentoo / Debian
 - デスクトップ環境 : dwm / fcitx-skk
 - エディタ : SublimeText / Vim
 - キーボード : HHKB Professional HYBRID / HHKB Professional2
 - Twitter : TweetDeck / Twitter for Android
-
-## ディストロ
-
-- Gentoo Linux
-- Debian GNU/Linux
 
 ## マシン
 
