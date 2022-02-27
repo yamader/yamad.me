@@ -30,7 +30,7 @@ noTitleFormat: true
 
 ## PGP Public Key
 
-[/pub.asc](/pub.asc)，WKD，CERTから取得できます．ご入用の際にどうぞ．
+[/pub.asc](/pub.asc)，WKD(direct)，CERT(PGP)から取得できます．ご入用の際にどうぞ．
 
 ```
 % gpg --fetch-keys https://yamad.me/pub.asc
