@@ -13,7 +13,7 @@ noTitleFormat: true
 ## ようこそ
 
 なんとここは山Dのホームページです．
-[SvelteKit](https://kit.svelte.dev)/[mdsvex](https://mdsvex.com)/[$\KaTeX$](https://katex.org)で構築しています．
+[SvelteKit](https://kit.svelte.dev) / [mdsvex](https://mdsvex.com) / [$\KaTeX$](https://katex.org) で構築しています．
 
 **New :**
 最近流行りのIPFSに置いてみました．
