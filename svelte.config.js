@@ -12,8 +12,14 @@ export default {
   kit: {
     adapter: adapter(),
     prerender: {
+      default: true,
       onError: "continue",
     },
     trailingSlash: "always",
+    vite: {
+      define: {
+        "process.env": process.env,
+      },
+    },
   },
 }
