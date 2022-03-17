@@ -1,0 +1,14 @@
+--- a/src/routes/index.md
++++ b/src/routes/index.md
+@@ -15,10 +15,7 @@
+ なんとここは山Dのホームページです．
+ [SvelteKit](https://kit.svelte.dev) / [mdsvex](https://mdsvex.com) / [$\KaTeX$](https://katex.org) で構築しています．
+ 
+-**New :**
+-最近流行りのIPFSに置いてみました．
+-
+-- ゲートウェイに[cloudflare-ipfs.com](https://www.cloudflare.com/distributed-web-gateway/)を使用 : [ipfs.yamad.me](https://ipfs.yamad.me)
++このページはIPFSから取得されています．
+ 
+ ## Contacts
+ 
