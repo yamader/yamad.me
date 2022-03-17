@@ -34,11 +34,11 @@ hr {
 }
 
 pre {
-  padding: 1.2em 0;
   $_p-x: 1em;
-  padding-left: $_p-x;
+  padding: 1em $_p-x;
   background-color: $c-dimBg;
   border-radius: 4px;
+  line-height: 1.2;
   overflow-x: auto;
   code::after {
     display: inline-block;
