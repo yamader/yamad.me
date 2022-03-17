@@ -19,6 +19,7 @@
     "remark-math": "2",
     "sass": "1.49.9",
     "svelte": "3.46.4",
+    "svelte-check": "2.4.6",
     "svelte-preprocess": "4.10.4",
     "svelte-sitemap": "2.3.0",
     "tslib": "2.3.1",
@@ -30,7 +31,10 @@
     "build:kit": "svelte-kit build",
     "build:pretty": "prettier -w 'build/**/*.html'",
     "build:sitemap": "svelte-sitemap --trailing-slashes -d https://yamad.me -i '404.html'",
-    "dev": "svelte-kit dev --host"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check-watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "dev": "svelte-kit dev",
+    "dev-host": "svelte-kit dev --host"
   },
   "type": "module"
 }

@@ -3,15 +3,12 @@ title: About
 description: 山Dについて
 ---
 
-<script context="module">
+<script>
   import contacts from "$lib/contacts.json"
   const links = [
     { name: "GitHub", disp: "@yamader", content: "https://github.com/yamader" },
     ...contacts,
   ]
-</script>
-
-<script>
   const birthYear = 2005
   let year = new Date().getFullYear()
 </script>

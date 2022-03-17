@@ -4,7 +4,7 @@ description: 山Dのウェブサイト
 noTitleFormat: true
 ---
 
-<script context="module">
+<script>
   import contacts from "$lib/contacts.json"
 </script>
 
