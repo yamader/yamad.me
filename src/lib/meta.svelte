@@ -1,11 +1,11 @@
 <script lang="ts">
   import { page } from "$app/stores"
 
-  export let title         : string = "${title}"
-  export let description   : string = "YamaD's website"
-  export let author        : string = "YamaD"
-  export let noRobots      : bool   = false
-  export let noTitleFormat : bool   = false
+  export let title         : string   = "${title}"
+  export let description   : string   = "YamaD's website"
+  export let author        : string   = "YamaD"
+  export let noRobots      : boolean  = false
+  export let noTitleFormat : boolean  = false
 
   const destTitle = title + (noTitleFormat ? "" : " | YamaD.me")
 </script>
@@ -13,7 +13,7 @@
 <svelte:head>
   <title>{destTitle}</title>
   <meta name="description"  content="{description}" />
-  <meta name="author"       conetnt="{author}" />
+  <meta name="author"       content="{author}" />
   <!-- <meta name="keywords"     content="山D,YamaD" /> -->
   <meta name="robots"       content="{noRobots ? "none" : "all"}" />
 

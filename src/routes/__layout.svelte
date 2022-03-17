@@ -34,7 +34,7 @@
       <ul class="headerLinks">
         {#each navLinks as { path, name }}
           <li>
-            <a svelte:prefetch class:active={$page.url.pathname === path} href="{path}">{name}</a>
+            <a sveltekit:prefetch class:active={$page.url.pathname === path} href="{path}">{name}</a>
           </li>
         {/each}
         <li>
