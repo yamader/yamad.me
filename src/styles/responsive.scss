@@ -1,10 +1,10 @@
 $breakpoints: (
-  xs: 0,
-  sm: 576px,
+  min: 0,
+  xs: 384px,
+  sm: 512px,
   md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
+  lg: 896px,
+  xl: 1280px,
 ) !default;
 
 // Break point Value
@@ -13,14 +13,14 @@ $breakpoints: (
 }
 
 // Break point Media query Up
-@mixin bpMqUp($bp: md) {
+@mixin mqUp($bp: md) {
   @media (max-width: #{map-get($breakpoints, $bp)}) {
     @content;
   }
 }
 
 // Break point Media query Down
-@mixin bpMqDown($bp: md) {
+@mixin mqDown($bp: md) {
   @media (min-width: #{map-get($breakpoints, $bp)}) {
     @content;
   }

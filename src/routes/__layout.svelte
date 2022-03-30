@@ -65,21 +65,21 @@
     flex-direction: column;
     border: 4px solid;
     border-radius: 8px;
-    @include bpMqUp(lg) {
+    @include mqUp(lg) {
       margin: 0;
       border: none;
     }
-    @include bpMqUp(sm) {
+    @include mqUp(sm) {
       padding: 5%;
       max-width: 100%;
     }
     & > hr {
       margin: 0.8rem auto;
       width: 80%;
-      @include bpMqUp(lg) {
+      @include mqUp(lg) {
         width: 95%;
       }
-      @include bpMqUp(md) {
+      @include mqUp(md) {
         width: 100%;
       }
     }
@@ -94,19 +94,20 @@
     display: flex;
     margin: 0 auto;
     line-height: 2em;
+    flex-wrap: wrap;
     font-size: 1.1rem;
     font-weight: bold;
     &::before {
       margin: auto 1.5em auto 0;
       content: "->";
-      @include bpMqUp(sm) {
+      @include mqUp(md) {
         display: none;
       }
     }
     &::after {
       margin: auto 0 auto 1.5em;
       content: "<-";
-      @include bpMqUp(sm) {
+      @include mqUp(md) {
         display: none;
       }
     }
@@ -122,18 +123,24 @@
         font-weight: bolder;
         text-decoration: underline;
       }
-      @include bpMqUp(md) {
+      @include mqUp(md) {
         min-width: 4em;
       }
-      @include bpMqUp(sm) {
+      @include mqUp(sm) {
         min-width: 0;
       }
     }
     li + li::before {
       margin: 0 1em;
       content: "|";
-      @include bpMqUp(sm) {
+      @include mqUp(md) {
         margin: 0 .8em;
+      }
+      @include mqUp(sm) {
+        margin: 0 .6em;
+      }
+      @include mqUp(xs) {
+        margin: 0 .2em;
       }
     }
   }
@@ -141,16 +148,16 @@
   main {
     margin-bottom: 2rem;
     padding: 0 15%;
-    @include bpMqUp(xl) {
+    @include mqUp(xl) {
       padding: 0 12%;
     }
-    @include bpMqUp(lg) {
+    @include mqUp(lg) {
       padding: 0 10%;
     }
-    @include bpMqUp(md) {
+    @include mqUp(md) {
       padding: 0 5%;
     }
-    @include bpMqUp(sm) {
+    @include mqUp(sm) {
       padding: 0;
     }
   }
