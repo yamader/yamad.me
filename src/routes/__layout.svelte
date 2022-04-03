@@ -136,9 +136,6 @@
       @include mqUp(md) {
         margin: 0 .8em;
       }
-      @include mqUp(sm) {
-        margin: 0 .6em;
-      }
       @include mqUp(xs) {
         margin: 0 .2em;
       }
