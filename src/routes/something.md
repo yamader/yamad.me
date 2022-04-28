@@ -12,6 +12,7 @@ description: なにか
 ## 作ったもの・サービス
 
 - [1lil.li](https://1lil.li/s/) : URL短縮
+- [d3bu.net](https://github.com/KCCTdensan/d3bu.net) : 神戸高専 電算部 HP
 
 ## 作っているもの
 

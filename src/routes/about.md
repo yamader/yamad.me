@@ -23,6 +23,8 @@ description: 山Dについて
 
 # About
 
+"`YamaD`" もしくは "`山D`"
+
 ## 自己紹介
 
 実は某市立高専電子科の3年生です．
@@ -48,18 +50,24 @@ description: 山Dについて
   {/each}
 </ul>
 
-## 使える言語 (使えるとは言ってない)
+## 使える言語・技術 (使えるとは言ってない)
 
-- C / C++
-- D
-- OCaml
-- Zig
-- JavaScript / TypeScript
-- Python
+- D : 普段はDを使っています
+- C / C++ : 必要に迫られたときに使います
+- Zig : 最近始めました
+- TeX : レポート等で使います
+- JavaScript / TypeScript : Web関連やアプリ開発で使います
+- OCaml : たまに書きます
+- Python : ほとんど使いません
+
+
+- Docker / k8s : 自宅鯖や部室ラズパイの運用に利用しています
+- Btrfs : いろいろ便利な機能があって重宝しています
+- GnuPG : 適当に運用しています
 
 ## 宗派
 
-- ディストロ : Gentoo / Debian
+- ディストロ : Gentoo
 - デスクトップ環境 : dwm / fcitx-skk
 - エディタ : SublimeText / Vim
 - キーボード : HHKB Professional HYBRID / HHKB Professional2
