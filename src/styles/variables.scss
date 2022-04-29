@@ -1,3 +1,5 @@
+// Colors
+
 $c-bg: white !default;
 $c-text: black !default;
 $c-link: orangered !default;
@@ -12,7 +14,6 @@ $c-dimText: darkslategray !default;
   $c-dimText: #a8cbcb !global;
 }
 
-html, body, input, textarea, select, button {
-  background-color: $c-bg;
-  color: $c-text;
-}
+// Fonts
+
+$f-mono: "Fira Code", ui-monospace, monospace !default;

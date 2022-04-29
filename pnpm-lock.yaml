@@ -5,6 +5,7 @@ specifiers:
   '@sveltejs/kit': next
   autoprefixer: 10.4.5
   cssnano: 5.1.7
+  firacode: 6.2.0
   katex: 0.15.3
   mdsvex: 0.10.5
   npm-run-all: 4.1.5
@@ -23,6 +24,7 @@ specifiers:
   typescript: 4.6.4
 
 dependencies:
+  firacode: 6.2.0
   katex: 0.15.3
   sanitize.css: 13.0.0
 
@@ -826,6 +828,10 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
     dev: true
+
+  /firacode/6.2.0:
+    resolution: {integrity: sha512-t5R3aO2BmhRXnYtKXbImLVNsILuCIbJ/XlDzBufjpi3il8P/CVdpWco83Ud3r2Tl0gitAmyP4o1fbJ52ozV1jw==}
+    dev: false
 
   /fraction.js/4.2.0:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}

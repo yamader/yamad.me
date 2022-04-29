@@ -8,7 +8,7 @@ export default {
     dashes: "oldschool",
   },
   layout: {
-    _: "./src/mdlayout.svelte",
+    _: "./src/md_layout.svelte",
   },
   remarkPlugins: [remarkMath],
   rehypePlugins: [rehypeKatex],

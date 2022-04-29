@@ -23,7 +23,7 @@ description: 山Dについて
 
 # About
 
-"`YamaD`" もしくは "`山D`"
+`YamaD` もしくは `山D`
 
 ## 自己紹介
 

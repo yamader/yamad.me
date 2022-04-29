@@ -1,43 +1,18 @@
 @import "styles/sanitize.scss";
+@import "styles/helpers.scss";
+@import "styles/variables.scss";
+@import "styles/fonts.scss";
 @import "katex/dist/katex.min.css";
 
-@import "styles/responsive.scss";
-@import "styles/colors.scss";
-//@import "styles/fonts.scss";
+// Global
 
-body {
-  *:focus-visible {
-    outline: auto;
-  }
+html, body, input, textarea, select, button {
+  background-color: $c-bg;
+  color: $c-text;
 }
 
-h1 {
-  font-weight: bolder;
-}
-h2 {
-  // counter-increment: h2;
-  // &::before {
-  //   margin-right: .5em;
-  //   content: counter(h2);
-  // }
-}
-h3 {
-  // counter-increment: h3;
-  // &::before {
-  //   margin-right: .5em;
-  //   content: counter(h2)"."counter(h3);
-  // }
-}
-
-hr {
-  margin: 1.5rem auto;
-}
-
-pre {
-  padding: 1em;
-  background-color: $c-dimBg;
-  border-radius: 4px;
-  overflow-x: auto;
+body *:focus-visible {
+  outline: auto;
 }
 
 a {
@@ -45,15 +20,38 @@ a {
   color: $c-link;
   font-weight: bolder;
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
   }
 }
 
-/* Components */
+code {
+  margin: .25em;
+  padding: .25em .5em;
+  border-radius: .25em;
+  background-color: $c-dimBg;
+  cursor: text;
+  font: .8em $f-mono;
+}
 
-summary.h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  user-select: none;
+pre {
+  padding: 1em;
+  background-color: $c-dimBg;
+  border-radius: .25em;
+  line-height: 1.2;
+
+  code {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+hr {
+  margin: 1.5rem auto;
 }

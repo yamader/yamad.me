@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores"
 
-  export let title         : string   = "${title}"
+  export let title         : string   = '"${title}"'
   export let description   : string   = "YamaD's website"
   export let author        : string   = "YamaD"
   export let noRobots      : boolean  = false

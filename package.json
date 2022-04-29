@@ -2,6 +2,7 @@
   "name": "YamaD.me",
   "version": "1.0.0",
   "dependencies": {
+    "firacode": "6.2.0",
     "katex": "0.15.3",
     "sanitize.css": "13.0.0"
   },
@@ -30,7 +31,7 @@
     "build:404": "mv build/404/index.html build/404.html && rmdir build/404",
     "build:kit": "svelte-kit build",
     "build:pretty": "prettier -w 'build/**/*.html'",
-    "build:sitemap": "svelte-sitemap --trailing-slashes -d https://yamad.me -i '404.html'",
+    "build:sitemap": "svelte-sitemap -d https://yamad.me -i '404.html'",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check-watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "dev": "svelte-kit dev",

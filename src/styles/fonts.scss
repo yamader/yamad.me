@@ -1,4 +1,7 @@
-/* Mplus 2 - OpenType fonts (otf) */
+@import "firacode";
+
+// Mplus 2 - OpenType fonts (otf)
+
 @font-face {
   font-family: "M PLUS 2";
   font-style: normal;
@@ -6,6 +9,7 @@
   font-display: swap;
   src: url(/assets/font/Mplus2-Thin.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "M PLUS 2";
   font-style: normal;
@@ -13,6 +17,7 @@
   font-display: swap;
   src: url(/assets/font/Mplus2-ExtraLight.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "M PLUS 2";
   font-style: normal;
@@ -20,6 +25,7 @@
   font-display: swap;
   src: url(/assets/font/Mplus2-Light.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "M PLUS 2";
   font-style: normal;
@@ -27,6 +33,7 @@
   font-display: swap;
   src: url(/assets/font/Mplus2-Regular.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "M PLUS 2";
   font-style: normal;
@@ -34,6 +41,7 @@
   font-display: swap;
   src: url(/assets/font/Mplus2-Medium.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "M PLUS 2";
   font-style: normal;
@@ -41,6 +49,7 @@
   font-display: swap;
   src: url(/assets/font/Mplus2-SemiBold.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "M PLUS 2";
   font-style: normal;
@@ -48,6 +57,7 @@
   font-display: swap;
   src: url(/assets/font/Mplus2-Bold.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "M PLUS 2";
   font-style: normal;
@@ -55,6 +65,7 @@
   font-display: swap;
   src: url(/assets/font/Mplus2-ExtraBold.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "M PLUS 2";
   font-style: normal;
