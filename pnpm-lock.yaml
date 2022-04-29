@@ -20,7 +20,7 @@ specifiers:
   svelte-preprocess: 4.10.6
   svelte-sitemap: 2.5.0
   tslib: 2.4.0
-  typescript: 4.6.3
+  typescript: 4.6.4
 
 dependencies:
   katex: 0.15.3
@@ -28,7 +28,7 @@ dependencies:
 
 devDependencies:
   '@sveltejs/adapter-static': 1.0.0-next.29
-  '@sveltejs/kit': 1.0.0-next.323_sass@1.51.0+svelte@3.47.0
+  '@sveltejs/kit': 1.0.0-next.324_sass@1.51.0+svelte@3.47.0
   autoprefixer: 10.4.5_postcss@8.4.12
   cssnano: 5.1.7_postcss@8.4.12
   mdsvex: 0.10.5_svelte@3.47.0
@@ -41,10 +41,10 @@ devDependencies:
   sass: 1.51.0
   svelte: 3.47.0
   svelte-check: 2.7.0_e779818f19bad2933d86ebd00bbae38e
-  svelte-preprocess: 4.10.6_4742969344fd9d1c8d213ed539e2ce26
+  svelte-preprocess: 4.10.6_ed8be42a350e531459528677cf8723db
   svelte-sitemap: 2.5.0
   tslib: 2.4.0
-  typescript: 4.6.3
+  typescript: 4.6.4
 
 packages:
 
@@ -112,8 +112,8 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.323_sass@1.51.0+svelte@3.47.0:
-    resolution: {integrity: sha512-5JVBfXZqVcWhsvtxdwtFPEzLNM8FmttNNyN0h5P25KLryF3BeOg5OicRK3t7qNBmWTTNovDgChb/gWmne5Oicg==}
+  /@sveltejs/kit/1.0.0-next.324_sass@1.51.0+svelte@3.47.0:
+    resolution: {integrity: sha512-/CGW9rQpHQLBb2EcMw08yelD/C9hTsypymctUWdhryMTI8n1VWb0gkUcSHsz8n8oAAbKLXqwyHqeLATfcIMg2w==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -159,8 +159,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /@types/node/17.0.29:
-    resolution: {integrity: sha512-tx5jMmMFwx7wBwq/V7OohKDVb/JwJU5qCVkeLMh1//xycAJ/ESuw9aJ9SEtlCZDYi2pBfe4JkisSoAtbOsBNAA==}
+  /@types/node/17.0.30:
+    resolution: {integrity: sha512-oNBIZjIqyHYP8VCNAV9uEytXVeXG2oR0w9lgAXro20eugRQfY002qr3CUl6BAe+Yf/z3CRjPdz27Pu6WWtuSRw==}
     dev: true
 
   /@types/pug/2.0.6:
@@ -170,7 +170,7 @@ packages:
   /@types/sass/1.43.1:
     resolution: {integrity: sha512-BPdoIt1lfJ6B7rw35ncdwBZrAssjcwzI5LByIrYs+tpXlj/CAkuVdRsgZDdP4lq5EjyWzwxZCqAoFyHKFwp32g==}
     dependencies:
-      '@types/node': 17.0.29
+      '@types/node': 17.0.30
     dev: true
 
   /@types/unist/2.0.6:
@@ -251,7 +251,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001334
-      electron-to-chromium: 1.4.124
+      electron-to-chromium: 1.4.125
       escalade: 3.1.1
       node-releases: 2.0.4
       picocolors: 1.0.0
@@ -522,8 +522,8 @@ packages:
       domhandler: 4.3.1
     dev: true
 
-  /electron-to-chromium/1.4.124:
-    resolution: {integrity: sha512-VhaE9VUYU6d2eIb+4xf83CATD+T+3bTzvxvlADkQE+c2hisiw3sZmvEDtsW704+Zky9WZGhBuQXijDVqSriQLA==}
+  /electron-to-chromium/1.4.125:
+    resolution: {integrity: sha512-1lQM6s0FnAKt9LCfL05S8wnuAhVMemi7zCFWnTZ0vu7jR1a0RD8ML1gRBsyeEp6MRU+zNbgyaKcjyU1aPIpJYA==}
     dev: true
 
   /entities/2.2.0:
@@ -1995,8 +1995,8 @@ packages:
       sade: 1.8.1
       source-map: 0.7.3
       svelte: 3.47.0
-      svelte-preprocess: 4.10.6_4742969344fd9d1c8d213ed539e2ce26
-      typescript: 4.6.3
+      svelte-preprocess: 4.10.6_ed8be42a350e531459528677cf8723db
+      typescript: 4.6.4
     transitivePeerDependencies:
       - '@babel/core'
       - coffeescript
@@ -2019,7 +2019,7 @@ packages:
       svelte: 3.47.0
     dev: true
 
-  /svelte-preprocess/4.10.6_4742969344fd9d1c8d213ed539e2ce26:
+  /svelte-preprocess/4.10.6_ed8be42a350e531459528677cf8723db:
     resolution: {integrity: sha512-I2SV1w/AveMvgIQlUF/ZOO3PYVnhxfcpNyGt8pxpUVhPfyfL/CZBkkw/KPfuFix5FJ9TnnNYMhACK3DtSaYVVQ==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
@@ -2070,7 +2070,7 @@ packages:
       sorcery: 0.10.0
       strip-indent: 3.0.0
       svelte: 3.47.0
-      typescript: 4.6.3
+      typescript: 4.6.4
     dev: true
 
   /svelte-sitemap/2.5.0:
@@ -2120,8 +2120,8 @@ packages:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
     dev: true
 
-  /typescript/4.6.3:
-    resolution: {integrity: sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==}
+  /typescript/4.6.4:
+    resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
@@ -2231,7 +2231,7 @@ packages:
       '@oozcitak/dom': 1.15.10
       '@oozcitak/infra': 1.0.8
       '@oozcitak/util': 8.3.8
-      '@types/node': 17.0.29
+      '@types/node': 17.0.30
       js-yaml: 3.14.0
     dev: true
 

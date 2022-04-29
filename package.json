@@ -23,7 +23,7 @@
     "svelte-preprocess": "4.10.6",
     "svelte-sitemap": "2.5.0",
     "tslib": "2.4.0",
-    "typescript": "4.6.3"
+    "typescript": "4.6.4"
   },
   "scripts": {
     "build": "run-s build:kit build:404 build:sitemap build:pretty",
