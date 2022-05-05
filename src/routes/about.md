@@ -71,7 +71,7 @@ description: 山Dについて
 - ディストロ : Gentoo
 - デスクトップ環境 : dwm / fcitx-skk
 - エディタ : SublimeText / Vim
-- キーボード : HHKB Professional HYBRID / HHKB Professional2
+- キーボード : HHKB
 - Twitter : TweetDeck / Twitter for Android
 
 ## マシン
