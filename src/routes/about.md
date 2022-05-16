@@ -53,10 +53,11 @@ description: 山Dについて
 - D : 普段はDを使っています
 - C / C++ : 必要に迫られたときに使います
 - Zig : 最近始めました
-- TeX : レポート等で使います
+- $\LaTeX$ / SATySFi : レポート等で使います
 - JavaScript / TypeScript : Web関連やアプリ開発で使います
+- Python : 電卓の代わりに使います
 - OCaml : たまに書きます
-- Python : ほとんど使いません
+- Go : たまに書きます
 
 
 - Docker / k8s : 自宅鯖や部室ラズパイの運用に利用しています
