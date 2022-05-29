@@ -17,6 +17,10 @@ description: なにか
 ## 作っているもの
 
 - [yamadOS](https://github.com/yamader/os) : OS
+- [dish](https://dish.dyama.net) : 対話型シェル
+- [dterm](https://dterm.dyama.net) : 仮想端末
+- [dlibc](https://dlibc.dyama.net) : 標準Cライブラリ
+- [coreutils](https://coreutils.dyama.net) : coreutilsっぽいやつ
 
 ## ギャラリー
 
