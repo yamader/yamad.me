@@ -8,19 +8,20 @@ noTitleFormat: true
   import contacts from "$lib/contacts.json"
 </script>
 
-# YamaD
+# YamaD.me
 
-## ようこそ
+## # ようこそ
 
 なんとここは山Dのホームページです．
-[SvelteKit](https://kit.svelte.dev)/[mdsvex](https://mdsvex.com)/[$\KaTeX$](https://katex.org)で構築しています．
+[SvelteKit](https://kit.svelte.dev)で構築しています．
+[w3m](http://w3m.sourceforge.net)からでも観覧できます．
 
 **New :**
 最近流行りのIPFSに置いてみました．
 
 - ゲートウェイに[cloudflare-ipfs.com](https://www.cloudflare.com/distributed-web-gateway/)を使用 : [ipfs.yamad.me](https://ipfs.yamad.me)
 
-## Contacts
+## # 連絡先
 
 <ul>
   {#each contacts as { name, disp, content }}
@@ -28,7 +29,7 @@ noTitleFormat: true
   {/each}
 </ul>
 
-## OpenPGP Public Key
+## # OpenPGP Public Key
 
 [/pub.asc](/pub.asc)，WKD(direct)，CERT(PGP)から取得できます．ご入用の際にどうぞ．
 

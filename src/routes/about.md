@@ -23,24 +23,22 @@ description: 山Dについて
 
 # About
 
-`YamaD` もしくは `山D`
+## # 自己紹介
 
-## 自己紹介
+`YamaD` もしくは `山D`
 
 実は某市立高専電子科の3年生です．
 いわゆる低レイヤに興味があります．
 
-## 年齢
-
 西暦<input type=number bind:value={year} class="yearNum" />年において，
-山Dは{#if year < birthYear}まだ生まれていません．{:else}<strong>{year-birthYear}</strong>歳です．{/if}
-{#if (year-birthYear) >= 200}おそらく死んでいます．{/if}
+山Dは{#if year < birthYear}まだ生まれていません{:else}<strong>{year - birthYear}</strong>歳です{/if}．
+{#if (year - birthYear) >= 200}おそらく死んでいます．{/if}
 
-## やったこと
+## # やったこと
 
 [/something/](/something/)に書いてあるかもしれません．
 
-## リンク
+## # リンク
 
 <ul>
   {#each links as { name, disp, content }}
@@ -48,11 +46,11 @@ description: 山Dについて
   {/each}
 </ul>
 
-## 使える言語・技術 (使えるとは言ってない)
+## # 使える言語・技術 (使えるとは言ってない)
 
 - D : 普段はDを使っています
-- C / C++ : 必要に迫られたときに使います
 - Zig : 最近始めました
+- C / C++ : 必要に迫られたときに使います
 - $\LaTeX$ / SATySFi : レポート等で使います
 - JavaScript / TypeScript : Web関連やアプリ開発で使います
 - Python : 電卓の代わりに使います
@@ -60,21 +58,21 @@ description: 山Dについて
 - Go : たまに書きます
 
 
-- Docker / k8s : 自宅鯖や部室ラズパイの運用に利用しています
+- Docker / k8s : 自宅鯖やラズパイクラスタの運用に利用しています
 - Btrfs : いろいろ便利な機能があって重宝しています
 - GnuPG : 適当に運用しています
 
-## 宗派
+## # 宗派
 
-- ディストロ : Gentoo
+- ディストロ : Gentoo (OpenRC)
 - デスクトップ環境 : dwm / fcitx-skk
 - エディタ : SublimeText / Vim
 - キーボード : HHKB
 - Twitter : TweetDeck / Twitter for Android
 
-## マシン
+## # マシン
 
-- Core 8500 / DDR4 128G / GeForce 1070 Ti デスクトップ
-- Core 1165G7 / DDR4 16G / Iris Xe ラップトップ
-- Ryzen 3100 / DDR4 16G デスクトップ(サーバー)
+- デスクトップ : Core 8500 / DDR4 128G / GeForce 1070 Ti
+- ラップトップ : Core 1165G7 / DDR4 16G / Iris Xe
+- サーバー : Ryzen 3100 / DDR4 16G
 - その他がらくた
