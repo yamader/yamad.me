@@ -15,19 +15,10 @@
     const command = [
       "ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a",
     ]
-    const commandChar = {
-      "ArrowLeft": "←",
-      "ArrowDown": "↓",
-      "ArrowUp": "↑",
-      "ArrowRight": "→",
-      "a": "A",
-      "b": "B",
-    }
     let cur = 0
 
     addEventListener("keydown", e => {
       if(e.key == command[cur++]) {
-        console.log(commandChar[e.key])
         if(cur == command.length) {
           for(let i=0; i<2; ++i) alert("そのうち何か作ります")
           while(true) alert("逮捕")
