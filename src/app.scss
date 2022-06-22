@@ -11,6 +11,10 @@ html, body, input, textarea, select, button {
   color: $c-text;
 }
 
+body {
+  font-family: "M PLUS 2";
+}
+
 body *:focus-visible {
   outline: auto;
 }
