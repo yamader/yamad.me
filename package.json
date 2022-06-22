@@ -11,12 +11,12 @@
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "autoprefixer": "10.4.7",
-    "cssnano": "5.1.11",
+    "cssnano": "5.1.12",
     "mdsvex": "0.10.6",
     "npm-run-all": "4.1.5",
     "postcss": "8.4.14",
     "postcss-load-config": "4.0.1",
-    "prettier": "2.6.2",
+    "prettier": "2.7.1",
     "rehype-katex-svelte": "1.1.2",
     "remark-math": "2",
     "sass": "1.52.3",
@@ -25,7 +25,7 @@
     "svelte-preprocess": "4.10.7",
     "svelte-sitemap": "2.5.1",
     "tslib": "2.4.0",
-    "typescript": "4.7.3"
+    "typescript": "4.7.4"
   },
   "scripts": {
     "build": "run-s build:kit build:404 build:sitemap build:pretty",
