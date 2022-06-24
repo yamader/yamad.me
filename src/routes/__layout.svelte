@@ -110,6 +110,7 @@
     font-size: 1.1rem;
     font-weight: bold;
     line-height: 2em;
+    list-type: none;
 
     &::before {
       margin: auto 1.5em auto 0;
