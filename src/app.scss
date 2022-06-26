@@ -12,11 +12,11 @@ html, body, input, textarea, select, button {
 }
 
 body {
-  font-family: "M PLUS 2";
-}
+  font-family: $f-normal;
 
-body *:focus-visible {
-  outline: auto;
+  *:focus-visible {
+    outline: auto;
+  }
 }
 
 a {
