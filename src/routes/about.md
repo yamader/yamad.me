@@ -49,7 +49,7 @@ description: 山Dについて
 ## # 使える言語・技術 (使えるとは言ってない)
 
 - D : 普段はDを使っています
-- Zig : 最近始めました
+- Zig / Nim : 最近始めました
 - C / C++ : 必要に迫られたときに使います
 - $\LaTeX$ / SATySFi : レポート等で使います
 - JavaScript / TypeScript : Web関連やアプリ開発で使います
