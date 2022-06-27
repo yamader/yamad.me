@@ -1,9 +1,15 @@
-@import "firacode";
-
 // M PLUS 2
 
 @font-face {
   font-family: "M PLUS 2";
+  src: url("/assets/font/mplus2.ttf") format("truetype-variations");
   font-display: swap;
-  src: url(/assets/font/mplus2.ttf) format("truetype-variations");
+}
+
+// Fira Code
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/assets/font/firacode.ttf") format("truetype-variations");
+  font-display: swap;
 }

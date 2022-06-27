@@ -2,8 +2,6 @@
   "name": "YamaD.me",
   "version": "1.0.0",
   "dependencies": {
-    "ayu": "8.0.1",
-    "firacode": "6.2.0",
     "katex": "0.16.0",
     "sanitize.css": "13.0.0"
   },
