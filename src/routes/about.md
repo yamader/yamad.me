@@ -4,11 +4,6 @@ description: 山Dについて
 ---
 
 <script>
-  import contacts from "$lib/contacts.json"
-  const links = [
-    { name: "GitHub", disp: "@yamader", content: "https://github.com/yamader" },
-    ...contacts,
-  ]
   const birthYear = 2005
   let year = new Date().getFullYear()
 </script>
@@ -40,11 +35,10 @@ description: 山Dについて
 
 ## # リンク
 
-<ul>
-  {#each links as { name, disp, content }}
-    <li>{name} : <a href={content} target="_blank" rel="external">{disp}</a></li>
-  {/each}
-</ul>
+- GitHub  : <a href="https://github.com/yamader" target="_blank">@yamader</a>
+- E-mail  : <a href="https://me.dyama.net" target="_blank">me(at)dyama.net</a>
+- Twitter : <a href="https://twitter.com/_yamader" target="_blank">@_yamader</a>
+- Discord : <a href="https://discord.com/users/542656442876952586" target="_blank">YamaD#0142</a>
 
 ## # 使える言語・技術 (使えるとは言ってない)
 

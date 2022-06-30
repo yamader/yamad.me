@@ -4,10 +4,6 @@ description: 山Dのウェブサイト
 noTitleFormat: true
 ---
 
-<script>
-  import contacts from "$lib/contacts.json"
-</script>
-
 # YamaD.me
 
 ## # ようこそ
@@ -16,24 +12,23 @@ noTitleFormat: true
 [SvelteKit](https://kit.svelte.dev)で構築しています．
 [w3m](http://w3m.sourceforge.net)からでも観覧できます．
 
-ソースコードは[こちら](/src.txz)から取得できます．
+ソースコードは<a href="/src.txz" rel="external">こちら</a>から取得できます．
 
 **New :**
 最近流行りのIPFSに置いてみました．
 
-- ゲートウェイに[cloudflare-ipfs.com](https://www.cloudflare.com/distributed-web-gateway/)を使用 : [ipfs.yamad.me](https://ipfs.yamad.me)
+- ゲートウェイに[cloudflare-ipfs.com](https://www.cloudflare.com/distributed-web-gateway/)を使用
+  : [ipfs.yamad.me](https://ipfs.yamad.me)
 
 ## # 連絡先
 
-<ul>
-  {#each contacts as { name, disp, content }}
-    <li>{name} : <a href={content} target="_blank" rel="external">{disp}</a></li>
-  {/each}
-</ul>
+- E-mail  : <a href="https://me.dyama.net" target="_blank">me(at)dyama.net</a>
+- Twitter : <a href="https://twitter.com/_yamader" target="_blank">@_yamader</a>
+- Discord : <a href="https://discord.com/users/542656442876952586" target="_blank">YamaD#0142</a>
 
 ## # OpenPGP Public Key
 
-[/pub.asc](/pub.asc)，WKD(direct)，CERT(PGP)から取得できます．ご入用の際にどうぞ．
+<a href="/pub.asc" rel="external">/pub.asc</a>，WKD(direct)，CERT(PGP)から取得できます．ご入用の際にどうぞ．
 
 ```
 % gpg --fetch-keys https://yamad.me/pub.asc
