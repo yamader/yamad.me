@@ -6,7 +6,7 @@
 
 // Global
 
-html, body, input, textarea, select, button {
+html {
   background-color: $c-bg;
   color: $c-text;
 }
@@ -52,10 +52,6 @@ pre {
   }
 }
 
-h1 {
-  font-weight: bolder;
-}
-
 hr {
-  margin: 1.5rem auto;
+  border: 1px solid;
 }

@@ -13,15 +13,24 @@
 
   if(browser) {
     const command = [
-      "ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a",
+      "ArrowUp",
+      "ArrowUp",
+      "ArrowDown",
+      "ArrowDown",
+      "ArrowLeft",
+      "ArrowRight",
+      "ArrowLeft",
+      "ArrowRight",
+      "b",
+      "a",
     ]
     let cur = 0
 
     addEventListener("keydown", e => {
-      if(e.key == command[cur++]) {
-        if(cur == command.length) {
-          for(let i=0; i<2; ++i) alert("そのうち何か作ります")
-          while(true) alert("逮捕")
+      if (e.key === command[cur++]) {
+        if (cur === command.length) {
+          for (let i = 0; i < 2; ++i) alert("そのうち何か作ります")
+          while (true) alert("逮捕")
         }
       } else {
         cur = 0
@@ -78,16 +87,10 @@
 
     @include mqUp(sm) {
       padding: 5%;
-      max-width: 100%;
     }
 
     & > hr {
-      margin: 0.8rem auto;
-      width: 80%;
-
-      @include mqUp(lg) {
-        width: 95%;
-      }
+      width: 90%;
 
       @include mqUp(md) {
         width: 100%;
@@ -100,31 +103,25 @@
   .headerNav {
     display: flex;
     margin: 1rem auto;
-    user-select: none;
   }
 
   .headerLinks {
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
-    font-size: 1.1rem;
     font-weight: bold;
-    line-height: 2em;
     list-style: none;
 
     &::before {
-      margin: auto 1.5em auto 0;
-      content: "->";
-
+      content: "<";
+      margin-right: 1.2em;
       @include mqUp(md) {
         display: none;
       }
     }
-
     &::after {
-      margin: auto 0 auto 1.5em;
-      content: "<-";
-
+      content: ">";
+      margin-left: 1.2em;
       @include mqUp(md) {
         display: none;
       }
@@ -132,18 +129,14 @@
 
     li > a {
       display: inline-block;
-      min-width: 6em;
+      min-width: 4em;
       color: $c-text;
       text-align: center;
       text-decoration: none;
 
-      &:hover, &:active, &.active {
-        font-weight: bolder;
+      &:hover, &.active {
+        color: $c-link;
         text-decoration: underline;
-      }
-
-      @include mqUp(md) {
-        min-width: 4em;
       }
 
       @include mqUp(sm) {
@@ -152,30 +145,18 @@
     }
 
     li + li::before {
-      margin: 0 1em;
+      margin: 0 .8em;
       content: "|";
-
-      @include mqUp(md) {
-        margin: 0 .8em;
-      }
-
-      @include mqUp(xs) {
-        margin: 0 .2em;
-      }
     }
   }
 
   // Main
 
   main {
-    margin-bottom: 2rem;
-    padding: 0 15%;
+    margin-bottom: 2em;
+    padding: 0 10%;
 
     @include mqUp(md) {
-      padding: 0 5%;
-    }
-
-    @include mqUp(sm) {
       padding: 0;
     }
   }
@@ -184,7 +165,7 @@
 
   .copyright {
     display: block;
-    margin: 1em;
+    margin: 1em 0;
     color: $c-dimText;
     font-weight: bold;
     text-align: center;
