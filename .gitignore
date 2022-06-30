@@ -1,19 +1,7 @@
-.DS_Store
 node_modules
-/build
-/.svelte-kit
-/package
-.env
-.env.*
-!.env.example
-.vercel
-.output
+build
+.svelte-kit
+.pnpm-debug.log
 
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-.pnpm-debug.log*
+static/src.txz
+assets/*.woff2
