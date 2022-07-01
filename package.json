@@ -34,7 +34,7 @@
     "build": "run-s build-src _build",
     "build-font": "bash scripts/font.sh",
     "build-ipfs": "bash scripts/ipfs.sh",
-    "build-src": "git archive --prefix=src/ -o static/src.txz HEAD",
+    "build-src": "git archive --prefix=src/ -o static/src.tgz HEAD",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check-watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "dev": "svelte-kit dev",

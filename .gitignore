@@ -3,5 +3,5 @@ build
 .svelte-kit
 .pnpm-debug.log
 
-static/src.txz
+static/src.tgz
 assets/*.woff2

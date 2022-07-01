@@ -12,7 +12,7 @@ noTitleFormat: true
 [SvelteKit](https://kit.svelte.dev)で構築しています．
 [w3m](http://w3m.sourceforge.net)からでも観覧できます．
 
-ソースコードは<a href="/src.txz" rel="external">こちら</a>から取得できます．
+ソースコードは<a href="/src.tgz" rel="external">こちら</a>から取得できます．
 
 **New :**
 最近流行りのIPFSに置いてみました．
