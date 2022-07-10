@@ -18,17 +18,18 @@
     "rehype-katex-svelte": "1.1.2",
     "remark-math": "2",
     "sass": "1.53.0",
-    "svelte": "3.48.0",
+    "svelte": "3.49.0",
     "svelte-check": "2.8.0",
     "svelte-preprocess": "4.10.7",
     "svelte-sitemap": "2.5.1",
     "tslib": "2.4.0",
-    "typescript": "4.7.4"
+    "typescript": "4.7.4",
+    "vite": "2.9.14"
   },
   "scripts": {
     "_build": "run-s _build:kit _build:404 _build:sitemap _build:pretty",
     "_build:404": "mv build/404/index.html build/404.html && rmdir build/404",
-    "_build:kit": "svelte-kit build",
+    "_build:kit": "vite build",
     "_build:pretty": "prettier -w 'build/**/*.html'",
     "_build:sitemap": "svelte-sitemap -d https://yamad.me -i '404.html'",
     "build": "run-s build-src _build",
@@ -37,8 +38,9 @@
     "build-src": "git archive --prefix=src/ -o static/src.tgz HEAD",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check-watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "dev": "svelte-kit dev",
-    "dev-host": "svelte-kit dev --host"
+    "dev": "vite dev",
+    "dev-host": "vite dev --host",
+    "prepare": "svelte-kit sync"
   },
   "type": "module"
 }

@@ -7,7 +7,7 @@ export default {
   extensions: [".svelte", ...mdsvexConfig.extensions],
   preprocess: [
     preprocess({ postcss: true }),
-    mdsvex(mdsvexConfig)
+    mdsvex(mdsvexConfig),
   ],
   kit: {
     adapter: adapter(),
@@ -16,10 +16,5 @@ export default {
       onError: "continue",
     },
     trailingSlash: "always",
-    vite: {
-      define: {
-        "process.env": process.env,
-      },
-    },
   },
 }
