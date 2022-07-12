@@ -2,4 +2,5 @@ node_modules
 build
 .svelte-kit
 .pnpm-debug.log
+
 static/src.tgz
