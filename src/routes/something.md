@@ -16,11 +16,10 @@ description: なにか
 
 ## # 作っているもの
 
-- [yamadOS](https://github.com/yamader/os) : OS
-- [dish](https://dish.dyama.net) : 対話型シェル
-- [dterm](https://dterm.dyama.net) : 仮想端末
-- [dlibc](https://dlibc.dyama.net) : 標準Cライブラリ
-- [coreutils](https://coreutils.dyama.net) : coreutilsっぽいやつ
+- [yamadOS](/os/) : 自作OS
+- [dish](/dish/) : 対話型シェル
+- [dlibc](/dlibc/) : 標準Cライブラリ
+- [coreutils](/coreutils/) : coreutilsっぽいやつ
 
 
 - [termisskey](https://termisskey.dyama.net) : MisskeyのTUIクライアント
