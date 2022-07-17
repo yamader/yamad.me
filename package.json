@@ -27,22 +27,21 @@
     "vite": "3.0.0"
   },
   "scripts": {
-    "_build": "run-s _build:kit _build:404 _build:sitemap _build:beautify",
-    "_build:404": "mv build/404/index.html build/404.html && rmdir build/404",
-    "_build:beautify": "html-beautify -r -s 2 --no-preserve-newlines 'build/**/*.html'",
-    "_build:kit": "vite build",
-    "_build:sitemap": "svelte-sitemap -d https://yamad.me -i '404.html'",
-    "build": "run-s build-src _build",
+    "build": "run-s stage:src stage:kit stage:404 stage:sitemap stage:beautify",
     "build-font": "bash scripts/font.sh",
     "build-ipfs": "bash scripts/ipfs.sh",
-    "build-src": "git archive --prefix=src/ -o static/src.tgz HEAD",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check-watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "dev": "vite dev",
     "dev-host": "vite dev --host",
     "prepare": "svelte-kit sync",
     "preview": "vite preview",
-    "preview-host": "vite preview --host"
+    "preview-host": "vite preview --host",
+    "stage:404": "mv build/404/index.html build/404.html && rmdir build/404",
+    "stage:beautify": "html-beautify -r -s 2 --no-preserve-newlines 'build/**/*.html'",
+    "stage:kit": "vite build",
+    "stage:sitemap": "svelte-sitemap -d https://yamad.me -i '404.html'",
+    "stage:src": "git archive --prefix=src/ -o static/src.tgz HEAD"
   },
   "type": "module"
 }
