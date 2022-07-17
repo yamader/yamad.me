@@ -1,8 +1,8 @@
 ---
 title: coreutils
-description: coreutilsもどき
+description: 自作coreutilsもどき
 ---
 
-# coreutils : coreutilsもどき
+# coreutils : 自作coreutilsもどき
 
 - [github](https://github.com/yamader/coreutils.git)
