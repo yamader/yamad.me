@@ -8,8 +8,8 @@
   "devDependencies": {
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
-    "autoprefixer": "10.4.7",
     "cssnano": "5.1.12",
+    "cssnano-preset-advanced": "5.3.8",
     "js-beautify": "1.14.4",
     "mdsvex": "0.10.6",
     "npm-run-all": "4.1.5",
@@ -40,7 +40,9 @@
     "check-watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "dev": "vite dev",
     "dev-host": "vite dev --host",
-    "prepare": "svelte-kit sync"
+    "prepare": "svelte-kit sync",
+    "preview": "vite preview",
+    "preview-host": "vite preview --host"
   },
   "type": "module"
 }
