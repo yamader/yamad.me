@@ -14,17 +14,10 @@
   <title>{destTitle}</title>
   <meta name="description"  content="{description}" />
   <meta name="author"       content="{author}" />
-  <!-- <meta name="keywords"     content="山D,YamaD" /> -->
-  <meta name="robots"       content="{noRobots ? "none" : "all"}" />
-
-  <meta name="twitter:card"     content="summary" />
-  <meta name="twitter:site"     content="@_yamader" />
-  <meta name="twitter:creator"  content="@_yamader" />
-
-  <meta property="og:title"       content="{destTitle}" />
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://yamad.me{$page.url.pathname}" />
-  <meta property="og:image"       content="https://yamad.me/icon.png" />
-  <meta property="og:description" content="{description}" />
-  <meta property="og:site_name"   content="YamaD.me" />
+  {#if noRobots}<meta name="robots" content="none" />{/if}
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:title" content="{destTitle}" />
+  <meta property="og:type"  content="website" />
+  <meta property="og:url"   content="https://yamad.me{$page.url.pathname}" />
+  <meta property="og:image" content="https://yamad.me/icon.png" />
 </svelte:head>
