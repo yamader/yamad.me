@@ -14,5 +14,6 @@
   <meta name="author"       content="{author}" />
   {#if noRobots}<meta name="robots" content="none" />{/if}
   <meta name="twitter:card" content="summary" />
+  <meta property="og:title" content="{title}" />
   <meta property="og:image" content="https://yamad.me/icon.png" />
 </svelte:head>
