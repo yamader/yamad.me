@@ -24,7 +24,7 @@
     "svelte-sitemap": "2.5.1",
     "tslib": "2.4.0",
     "typescript": "4.7.4",
-    "vite": "3.0.0"
+    "vite": "3.0.1"
   },
   "scripts": {
     "build": "run-s stage:src stage:kit stage:404 stage:sitemap stage:beautify",
