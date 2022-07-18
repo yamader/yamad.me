@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { page } from "$app/stores"
-
   export let title         : string   = '"${title}"'
   export let description   : string   = "YamaD's website"
   export let author        : string   = "YamaD"
@@ -16,8 +14,5 @@
   <meta name="author"       content="{author}" />
   {#if noRobots}<meta name="robots" content="none" />{/if}
   <meta name="twitter:card" content="summary" />
-  <meta property="og:title" content="{destTitle}" />
-  <meta property="og:type"  content="website" />
-  <meta property="og:url"   content="https://yamad.me{$page.url.pathname}" />
   <meta property="og:image" content="https://yamad.me/icon.png" />
 </svelte:head>
