@@ -24,7 +24,7 @@
     "svelte-sitemap": "2.5.1",
     "tslib": "2.4.0",
     "typescript": "4.7.4",
-    "vite": "3.0.1"
+    "vite": "3.0.2"
   },
   "scripts": {
     "build": "run-s build:src build:main",
@@ -40,7 +40,7 @@
     "preview": "vite preview",
     "preview-host": "vite preview --host",
     "stage:404": "mv build/404/index.html build/404.html && rmdir build/404",
-    "stage:beautify": "html-beautify -r -s 2 --no-preserve-newlines 'build/**/*.html'",
+    "stage:beautify": "html-beautify -r -s 2 -E [] --no-preserve-newlines 'build/**/*.html'",
     "stage:kit": "vite build",
     "stage:sitemap": "svelte-sitemap -d https://yamad.me -i '404.html'"
   },
