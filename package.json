@@ -17,7 +17,7 @@
     "postcss-load-config": "4.0.1",
     "rehype-katex-svelte": "1.1.2",
     "remark-math": "2",
-    "sass": "1.53.0",
+    "sass": "1.54.0",
     "svelte": "3.49.0",
     "svelte-check": "2.8.0",
     "svelte-preprocess": "4.10.7",
