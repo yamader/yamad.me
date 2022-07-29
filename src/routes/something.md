@@ -9,11 +9,6 @@ description: なにか
 
 というか無い．
 
-## # 作ったもの
-
-- [1lil.li](https://1lil.li/s/) : URL短縮
-- [d3bu.net](https://d3bu.net) : 神戸高専 電算部 HP
-
 ## # 作っているもの
 
 - [yamadOS](/os/) : 自作OS
@@ -23,6 +18,15 @@ description: なにか
 
 
 - [termisskey](/termisskey/) : MisskeyのTUIクライアント
+
+## # 作ったもの
+
+- [1lil.li](https://1lil.li/s/) : URL短縮
+
+## # 参加しているもの
+
+- [神戸高専 電算部](https://d3bu.net)
+- [FascodeNetwork](https://fascode.net)
 
 ## # ギャラリー
 

@@ -35,21 +35,20 @@ description: 山Dについて
 
 ## # リンク
 
-- GitHub  : <a href="https://github.com/yamader" target="_blank">@yamader</a>
 - E-mail  : <a href="https://me.dyama.net" target="_blank">me(at)dyama.net</a>
 - Twitter : <a href="https://twitter.com/_yamader" target="_blank">@_yamader</a>
+- Misskey : <a href="https://msk.seppuku.club/@yamad" target="_blank">@yamad@msk.seppuku.club</a>
 - Discord : <a href="https://discord.com/users/542656442876952586" target="_blank">YamaD#0142</a>
+- GitHub  : <a href="https://github.com/yamader" target="_blank">@yamader</a>
 
 ## # 使える言語・技術 (使えるとは言ってない)
 
 - D : 普段はDを使っています
 - Zig / Nim : 最近始めました
 - C / C++ : 必要に迫られたときに使います
-- $\LaTeX$ / SATySFi : レポート等で使います
+- $\LaTeX$ : レポート等で使います
 - JavaScript / TypeScript : Web関連やアプリ開発で使います
-- Python : 電卓の代わりに使います
 - OCaml : たまに書きます
-- Go : たまに書きます
 
 
 - Docker / k8s : 自宅鯖やラズパイクラスタの運用に利用しています
