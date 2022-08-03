@@ -19,11 +19,6 @@ description: なにか
 
 - [1lil.li](https://1lil.li/s/) : URL短縮
 
-## # 参加しているもの
-
-- [神戸高専 電算部](https://d3bu.net)
-- [FascodeNetwork](https://fascode.net)
-
 ## # ギャラリー
 
 ![PC break](/assets/img/broken.jpg)
