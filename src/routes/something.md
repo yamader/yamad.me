@@ -13,10 +13,6 @@ description: なにか
 
 - [yamadOS](/os/) : 自作OS
 - [dish](/dish/) : 対話型シェル
-- [dlibc](/dlibc/) : 標準Cライブラリ
-- [coreutils](/coreutils/) : coreutilsもどき
-
-
 - [termisskey](/termisskey/) : MisskeyのTUIクライアント
 
 ## # 作ったもの
