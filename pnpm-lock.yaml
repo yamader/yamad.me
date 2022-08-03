@@ -29,7 +29,7 @@ dependencies:
 
 devDependencies:
   '@sveltejs/adapter-static': 1.0.0-next.38
-  '@sveltejs/kit': 1.0.0-next.402_svelte@3.49.0+vite@3.0.4
+  '@sveltejs/kit': 1.0.0-next.403_svelte@3.49.0+vite@3.0.4
   cssnano: 5.1.12_postcss@8.4.14
   cssnano-preset-advanced: 5.3.8_postcss@8.4.14
   js-beautify: 1.14.4
@@ -139,8 +139,8 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.402_svelte@3.49.0+vite@3.0.4:
-    resolution: {integrity: sha512-F0Mm+bTGOnl+vWKab5uwXsY+5YypC/uveGE0wKyYSE9a/pFQD20WwrvRKePGhUCepiHc7S82jxVZRwjCsToaNQ==}
+  /@sveltejs/kit/1.0.0-next.403_svelte@3.49.0+vite@3.0.4:
+    resolution: {integrity: sha512-pKlmthl1SZkbx671Jp+LBoRne0vNzsjSgta9iRhqW/bt/0mx/IjlMd/NOeLuJGo30dAJdefrySoSamiaq47M/g==}
     engines: {node: '>=16.9'}
     hasBin: true
     requiresBuild: true
