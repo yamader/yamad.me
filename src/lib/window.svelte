@@ -103,8 +103,7 @@
 
     .nav {
       display: flex;
-      height: 16px;
-      margin: 4px 6px 8px;
+      height: 28px;
       justify-content: space-between;
       align-items: center;
       user-select: none;
@@ -118,6 +117,7 @@
       .button {
         width: 16px;
         height: 16px;
+        margin: 6px 8px 6px 0;
         cursor: auto;
       }
     }
