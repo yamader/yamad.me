@@ -40,7 +40,7 @@
       case "open": return async (open = true) => {
         if(!visible && open) {
           mount = true
-          await sleep(1) // tickじゃダメだった
+          await sleep(10) // tickじゃダメだった
           visible = true
         }
       }

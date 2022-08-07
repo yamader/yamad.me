@@ -12,8 +12,6 @@
   onMount(() => gameOpen = exec("open"))
 </script>
 
-<svelte:options accessors />
-
 <Window bind:exec>
   ここには何もないようだ……
 </Window>
