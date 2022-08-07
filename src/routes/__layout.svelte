@@ -1,17 +1,22 @@
 <script lang="ts">
+  import Game from "$lib/game.svelte"
   import { page } from "$app/stores"
   import { browser } from "$app/env"
   import "../app.scss"
 
-  const navLinks: { path: string, name: string }[] = [
+  const navLinks = [
     { path: "/", name: "Top" },
     { path: "/about/", name: "About" },
     { path: "/something/", name: "Something" },
   ]
+  const navLinksExt = [
+    { url: "https://seppuku.club", name: "Blog" },
+  ]
 
-  // Konami Code
+  let game
 
   if(browser) {
+    // Konami Code
     const command = [
       "ArrowUp",
       "ArrowUp",
@@ -25,12 +30,11 @@
       "a",
     ]
     let cur = 0
-
     addEventListener("keydown", e => {
       if (e.key === command[cur++]) {
         if (cur === command.length) {
-          for (let i = 0; i < 2; ++i) alert("そのうち何か作ります")
-          while (true) alert("逮捕")
+          game.windowOpen()
+          cur = 0
         }
       } else {
         cur = 0
@@ -45,12 +49,14 @@
       <ul class="headerLinks">
         {#each navLinks as { path, name }}
           <li>
-            <a sveltekit:prefetch class:active={$page.url.pathname === path} href="{path}">{name}</a>
+            <a sveltekit:prefetch class:active={$page.url.pathname === path} href={path}>{name}</a>
           </li>
         {/each}
-        <li>
-          <a href="https://seppuku.club" rel="external">Blog</a>
-        </li>
+        {#each navLinksExt as { url, name }}
+          <li>
+            <a href={url} target="_blank" rel="external">{name}</a>
+          </li>
+        {/each}
       </ul>
     </nav>
   </header>
@@ -64,11 +70,11 @@
   </footer>
 </div>
 
+<Game bind:this={game} />
+
 <style lang="scss">
   @import "../styles/helpers.scss";
   @import "../styles/variables.scss";
-
-  // Container
 
   .container {
     display: flex;
@@ -78,27 +84,22 @@
     flex-direction: column;
     border: 4px solid;
     border-radius: 8px;
-
     @include mqUp(lg) {
       margin: 0;
       border: none;
       border-radius: 0;
     }
-
     @include mqUp(sm) {
       padding: 5%;
     }
 
     & > hr {
       width: 90%;
-
       @include mqUp(md) {
         width: 100%;
       }
     }
   }
-
-  // Header
 
   .headerNav {
     display: flex;
@@ -111,7 +112,6 @@
     flex-wrap: wrap;
     font-weight: bold;
     list-style: none;
-
     &::before {
       content: "<";
       margin-right: 1.2em;
@@ -133,12 +133,10 @@
       color: $c-text;
       text-align: center;
       text-decoration: none;
-
       &:hover, &.active {
         color: $c-link;
         text-decoration: underline;
       }
-
       @include mqUp(sm) {
         min-width: 0;
       }
@@ -150,18 +148,13 @@
     }
   }
 
-  // Main
-
   main {
     margin-bottom: 2em;
     padding: 0 10%;
-
     @include mqUp(md) {
       padding: 0;
     }
   }
-
-  // Footer
 
   .copyright {
     display: block;
