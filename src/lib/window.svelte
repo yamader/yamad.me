@@ -8,6 +8,8 @@
     | "buttonClose"
   type Code =
     | "close"
+  const max = Math.max
+  const sleep = ms => new Promise(res => setTimeout(res, ms))
 
   const mousedown = () => {
     if(visible) moving = true
@@ -22,6 +24,7 @@
     }
   }
 
+  let mount = false
   let visible = false
   let posx = 100
   let posy = 100
@@ -29,16 +32,18 @@
 
   export const exec = (code: Code) => {
     switch(code) {
-      case "open": return (open = true) => {
+      case "open": return async (open = true) => {
         if(!visible && open) {
-          // animation
+          mount = true
+          await sleep(1) // tickじゃダメだった
           visible = true
         }
       }
-      case "close": return () => {
+      case "close": return async () => {
         if(visible) {
-          // animation
           visible = false
+          await sleep(250)
+          mount = false
         }
       }
     }
@@ -53,8 +58,8 @@
   }
 </script>
 
-{#if visible}
-  <section class="window acrylic" style="top: {Math.max(0, posy)}px; left: {Math.max(0, posx)}px">
+{#if mount}
+  <section class="window acrylic" class:visible style="top: {max(0, posy)}px; left: {max(0, posx)}px">
     <nav class="nav">
       <div class="bar" on:mousedown={mousedown}></div>
       <div>
@@ -81,6 +86,15 @@
     width: 1024px;
     height: 640px;
     position: absolute;
+
+    opacity: 0;
+    transform: scale(.8);
+    transition: opacity .25s,
+                transform .25s;
+    &.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
 
     .nav {
       display: flex;
