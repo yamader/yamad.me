@@ -6,13 +6,14 @@
 <script lang="ts">
   import Window from "$lib/window.svelte"
   import { onMount } from "svelte"
-  export let windowOpen
-  let window
-  onMount(() => windowOpen = window.exec("open"))
+  import type { Exec } from "$lib/window.svelte"
+  let exec: Exec
+  export let gameOpen
+  onMount(() => gameOpen = exec("open"))
 </script>
 
 <svelte:options accessors />
 
-<Window bind:this={window}>
+<Window bind:exec>
   ここには何もないようだ……
 </Window>

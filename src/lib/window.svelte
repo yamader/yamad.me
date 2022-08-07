@@ -3,13 +3,18 @@
   - https://svelte.dev/repl/7d674cc78a3a44beb2c5a9381c7eb1a9?version=3.29.7
 -->
 
-<script lang="ts">
-  type Event =
+<script context="module" lang="ts">
+  export type Event =
     | "buttonClose"
-  type Code =
+  export type Code =
+    | "open"
     | "close"
+  export type Exec = (code: Code) => (...args: any[]) => void | Promise<void>
+</script>
+
+<script lang="ts">
   const max = Math.max
-  const sleep = ms => new Promise(res => setTimeout(res, ms))
+  const sleep = (ms: number) => new Promise(res => setTimeout(res, ms))
 
   const mousedown = () => {
     if(visible) moving = true
@@ -17,7 +22,7 @@
   const mouseup = () => {
     if(visible) moving = false
   }
-  const mousemove = e => {
+  const mousemove = (e: MouseEvent) => {
     if(visible && moving) {
       posx += e.movementX
       posy += e.movementY
@@ -30,7 +35,7 @@
   let posy = 100
   let moving = false
 
-  export const exec = (code: Code) => {
+  export const exec: Exec = code => {
     switch(code) {
       case "open": return async (open = true) => {
         if(!visible && open) {
@@ -88,7 +93,7 @@
     position: absolute;
 
     opacity: 0;
-    transform: scale(.8);
+    transform: scale(.9);
     transition: opacity .25s,
                 transform .25s;
     &.visible {

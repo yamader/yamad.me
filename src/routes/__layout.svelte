@@ -13,7 +13,7 @@
     { url: "https://seppuku.club", name: "Blog" },
   ]
 
-  let game
+  let gameOpen: () => void
 
   if(browser) {
     // Konami Code
@@ -33,7 +33,7 @@
     addEventListener("keydown", e => {
       if (e.key === command[cur++]) {
         if (cur === command.length) {
-          game.windowOpen()
+          gameOpen()
           cur = 0
         }
       } else {
@@ -70,7 +70,7 @@
   </footer>
 </div>
 
-<Game bind:this={game} />
+<Game bind:gameOpen />
 
 <style lang="scss">
   @import "../styles/helpers.scss";
