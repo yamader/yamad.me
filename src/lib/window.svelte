@@ -1,6 +1,6 @@
 <!--
   Thanks to:
-  - https://svelte.dev/repl/7d674cc78a3a44beb2c5a9381c7eb1a9?version=3.29.7
+    https://svelte.dev/repl/7d674cc78a3a44beb2c5a9381c7eb1a9?version=3.29.7
 -->
 
 <script context="module" lang="ts">
@@ -15,25 +15,6 @@
 <script lang="ts">
   const max = Math.max
   const sleep = (ms: number) => new Promise(res => setTimeout(res, ms))
-
-  const mousedown = () => {
-    if(visible) moving = true
-  }
-  const mouseup = () => {
-    if(visible) moving = false
-  }
-  const mousemove = (e: MouseEvent) => {
-    if(visible && moving) {
-      posx += e.movementX
-      posy += e.movementY
-    }
-  }
-
-  let mount = false
-  let visible = false
-  let posx = 100
-  let posy = 100
-  let moving = false
 
   export const exec: Exec = code => {
     switch(code) {
@@ -54,6 +35,19 @@
     }
   }
 
+  const mousedown = () => {
+    if(visible) moving = true
+  }
+  const mouseup = () => {
+    if(visible) moving = false
+  }
+  const mousemove = (e: MouseEvent) => {
+    if(visible && moving) {
+      posx += e.movementX
+      posy += e.movementY
+    }
+  }
+
   export let handler = (event: Event) => {
     switch(event) {
       case "buttonClose": return () => {
@@ -61,6 +55,12 @@
       }
     }
   }
+
+  let mount = false
+  let visible = false
+  let posx = 100
+  let posy = 100
+  let moving = false
 </script>
 
 {#if mount}

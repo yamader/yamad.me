@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Game from "$lib/game.svelte"
   import { page } from "$app/stores"
   import { browser } from "$app/env"
   import "../app.scss"
@@ -13,7 +12,8 @@
     { url: "https://seppuku.club", name: "Blog" },
   ]
 
-  let gameOpen: () => void
+  const konami = import("$lib/konami.svelte")
+  let konamiOpen: () => void
 
   if(browser) {
     // Konami Code
@@ -33,7 +33,7 @@
     addEventListener("keydown", e => {
       if (e.key === command[cur++]) {
         if (cur === command.length) {
-          gameOpen()
+          konamiOpen()
           cur = 0
         }
       } else {
@@ -70,7 +70,9 @@
   </footer>
 </div>
 
-<Game bind:gameOpen />
+{#await konami then { default: Konami }}
+  <Konami bind:konamiOpen />
+{/await}
 
 <style lang="scss">
   @import "../styles/helpers.scss";
