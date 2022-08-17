@@ -1,20 +1,21 @@
-import { mdsvex } from "mdsvex"
-import mdsvexConfig from "./mdsvex.config.js"
 import adapter from "@sveltejs/adapter-static"
 import preprocess from "svelte-preprocess"
+import { mdsvex } from "mdsvex"
+import mdsvexConfig from "./mdsvex.config.js"
 
 export default {
   extensions: [".svelte", ...mdsvexConfig.extensions],
-  preprocess: [
-    preprocess({ postcss: true }),
-    mdsvex(mdsvexConfig),
-  ],
   kit: {
     adapter: adapter(),
+    appDir: "app",
     prerender: {
       default: true,
       onError: "continue",
     },
     trailingSlash: "always",
   },
+  preprocess: [
+    preprocess({ postcss: true }),
+    mdsvex(mdsvexConfig),
+  ],
 }

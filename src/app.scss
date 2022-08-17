@@ -4,12 +4,9 @@
 @import "styles/fonts.scss";
 @import "katex/dist/katex.min.css";
 
-html {
+html, body {
   background-color: $c-bg;
   color: $c-text;
-}
-
-body {
   font-family: $f-normal;
 
   *:focus-visible {

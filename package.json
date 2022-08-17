@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "next",
-    "@sveltejs/kit": "next",
+    "@sveltejs/kit": "1.0.0-next.405",
     "cssnano": "5.1.13",
     "cssnano-preset-advanced": "5.3.8",
     "js-beautify": "1.14.5",
@@ -24,14 +24,14 @@
     "svelte-sitemap": "2.5.1",
     "tslib": "2.4.0",
     "typescript": "4.7.4",
-    "vite": "3.0.7"
+    "vite": "3.0.8"
   },
   "scripts": {
-    "build": "run-s build:src build:main",
-    "build-font": "bash scripts/font.sh",
-    "build-ipfs": "bash scripts/ipfs.sh",
-    "build:main": "run-s stage:kit stage:404 stage:sitemap stage:beautify",
-    "build:src": "git archive --prefix=src/ -o static/src.tgz HEAD",
+    "build": "run-s build:arch build:static",
+    "build-font": "scripts/font.sh",
+    "build-ipfs": "scripts/ipfs.sh",
+    "build:arch": "git archive --prefix=src/ -o static/src.tgz HEAD",
+    "build:static": "run-s stage:kit stage:404 stage:sitemap stage:beautify",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check-watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "dev": "vite dev",
