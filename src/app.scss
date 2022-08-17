@@ -3,6 +3,7 @@
 @import "styles/variables.scss";
 @import "styles/fonts.scss";
 @import "katex/dist/katex.min.css";
+@import "prism-themes/themes/prism-gruvbox-dark.css";
 
 html, body {
   background-color: $c-bg;
@@ -49,14 +50,6 @@ pre {
 hr {
   border: 1px solid;
 }
-
-// .fullscr {
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-// }
 
 .pix {
   image-rendering: crisp-edges;

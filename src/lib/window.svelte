@@ -39,7 +39,11 @@
     if(visible) moving = true
   }
   const mouseup = () => {
-    if(visible) moving = false
+    if(visible) {
+      posx = max(0, posx)
+      posy = max(0, posy)
+      moving = false
+    }
   }
   const mousemove = (e: MouseEvent) => {
     if(visible && moving) {
