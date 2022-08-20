@@ -6,8 +6,6 @@
   /// @ts-ignore
   export let description
   /// @ts-ignore
-  export let author
-  /// @ts-ignore
   export let noRobots
   /// @ts-ignore
   export let noTitleFormat
@@ -15,7 +13,7 @@
 
 <Meta {...{
   /// @ts-ignore
-  title, description, author, noRobots, noTitleFormat
+  title, description, noRobots, noTitleFormat
 }} />
 
 <slot />
