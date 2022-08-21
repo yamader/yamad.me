@@ -3,7 +3,6 @@
   "version": "1.1.0",
   "dependencies": {
     "katex": "0.16.0",
-    "prism-themes": "1.9.0",
     "sanitize.css": "13.0.0"
   },
   "devDependencies": {
@@ -33,7 +32,7 @@
     "build-font": "scripts/font.sh",
     "build-ipfs": "scripts/ipfs.sh",
     "build:arch": "git archive --prefix=src/ -o static/src.tgz HEAD",
-    "build:static": "run-s stage:kit stage:404 stage:sitemap stage:sed stage:beautify",
+    "build:static": "run-s stage:kit stage:404 stage:sitemap stage:beautify",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check-watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "dev": "vite dev",
@@ -43,9 +42,6 @@
     "stage:404": "mv build/404/index.html build/404.html && rmdir build/404",
     "stage:beautify": "html-beautify -r -s 2 -E [] --no-preserve-newlines 'build/**/*.html'",
     "stage:kit": "vite build",
-    "stage:sed": "run-p 'stage:sed:*'",
-    "stage:sed:css": "glob-run sed -i -f scripts/css.sed 'build/**/*.css'",
-    "stage:sed:html": "glob-run sed -i -f scripts/html.sed 'build/**/*.html'",
     "stage:sitemap": "svelte-sitemap -d https://yamad.me -i '404.html'"
   },
   "type": "module"

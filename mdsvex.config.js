@@ -12,4 +12,7 @@ export default {
   },
   remarkPlugins: [remarkMath],
   rehypePlugins: [rehypeKatex],
+  highlight: {
+    highlighter: (code, lang) => `<pre><code>${code}</code></pre>`,
+  },
 }
