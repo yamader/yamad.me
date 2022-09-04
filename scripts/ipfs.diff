@@ -1,5 +1,5 @@
---- a/src/routes/index.md
-+++ b/src/routes/index.md
+--- a/src/routes/+page.md
++++ b/src/routes/+page.md
 @@ -16,6 +16,7 @@
  
  **New :**

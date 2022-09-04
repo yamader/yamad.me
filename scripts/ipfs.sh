@@ -9,9 +9,9 @@ fi
 DIST=build/
 PATCH=scripts/ipfs.diff
 
-$RUNS build:src
+$RUNS build:arch
 git apply $PATCH
-$RUNS build:main
+$RUNS build:static
 git apply -R $PATCH
 
 HASH=$(ipfs add -rQ $DIST)
