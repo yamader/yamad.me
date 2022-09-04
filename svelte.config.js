@@ -9,7 +9,6 @@ export default {
     adapter: adapter(),
     appDir: "app",
     prerender: {
-      default: true,
       onError: "continue",
     },
     trailingSlash: "always",
