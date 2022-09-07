@@ -49,12 +49,12 @@
       <ul class="headerLinks">
         {#each navLinks as { path, name }}
           <li>
-            <a sveltekit:prefetch class:active={$page.url.pathname === path} href={path}>{name}</a>
+            <a sveltekit:prefetch class:active={$page.url.pathname === path} href="{path}">{name}</a>
           </li>
         {/each}
         {#each navLinksExt as { url, name }}
           <li>
-            <a href={url} target="_blank" rel="external">{name}</a>
+            <a href="{url}" target="_blank" rel="external">{name}</a>
           </li>
         {/each}
       </ul>
