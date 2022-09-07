@@ -4,11 +4,13 @@ set -ex
 SRC=assets
 DST=src/lib/assets
 
-rm -f $SRC/*.woff2
-
-for f in "$SRC"/*; do
-  woff2_compress "$f" && \
-  mv "${f%.*}.woff2" $DST/ &
+for f in $SRC/*; do
+  if [ ${f##*.} = woff2 ]; then
+    cp $f $DST/ &
+  else
+    woff2_compress $f && \
+      mv ${f%.*}.woff2 $DST/ &
+  fi
 done
 
 wait
