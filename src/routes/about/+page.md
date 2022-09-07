@@ -5,7 +5,7 @@ description: 山Dについて
 
 <script>
   const birthYear = 2005
-  let year = new Date().getFullYear()
+  let value = new Date().getFullYear()
 </script>
 
 <style lang="scss">
@@ -22,24 +22,18 @@ description: 山Dについて
 
 `YamaD` もしくは `山D`
 
-実は某市立高専電子科の3年生です．
-いわゆる低レイヤに興味があります．
+実は某市立高専電子科の3年生です。いわゆる低レイヤに興味があります。
 
-西暦<input type=number bind:value={year} class="yearNum" />年において，
-山Dは{#if year < birthYear}まだ生まれていません{:else}<strong>{year - birthYear}</strong>歳です{/if}．
-{#if (year - birthYear) >= 200}おそらく死んでいます．{/if}
+<p>
+  西暦<input type="number" class="yearNum" bind:value />年において，山Dは{#if value < birthYear}
+    まだ生まれていません。{:else}
+    <strong>{value - birthYear}</strong>歳です。{/if}{#if value - birthYear >= 200}
+    おそらく死んでいます。{/if}
+</p>
 
 ## # やったこと
 
-[/something/](/something/)に書いてあるかもしれません．
-
-## # リンク
-
-- E-mail  : <a href="https://me.dyama.net" target="_blank">me(at)dyama.net</a>
-- Twitter : <a href="https://twitter.com/_yamader" target="_blank">@_yamader</a>
-- Misskey : <a href="https://msk.seppuku.club/@yamad" target="_blank">@yamad@msk.seppuku.club</a>
-- Discord : <a href="https://discord.com/users/542656442876952586" target="_blank">YamaD#0142</a>
-- GitHub  : <a href="https://github.com/yamader" target="_blank">@yamader</a>
+[/something/](/something/)に書いてあるかもしれません。
 
 ## # 使える言語・技術 (使えるとは言ってない)
 
@@ -66,4 +60,6 @@ description: 山Dについて
 - デスクトップ : Core 8500 / DDR4 128G / GeForce 1070 Ti
 - ラップトップ : Core 1165G7 / DDR4 16G / Iris Xe
 - サーバー : Ryzen 3100 / DDR4 16G
+- 漬物石 : Core 7500 / DDR4 20G / HD 630
+- ネタ枠 : PowerPC 970 / DDR 1G / GeForce FX 5200 Ultra
 - その他がらくた

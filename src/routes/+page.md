@@ -8,27 +8,25 @@ noTitleFormat: true
 
 ## # ようこそ
 
-なんとここは山Dのホームページです．
-[SvelteKit](https://kit.svelte.dev)で構築しています．
-[w3m](http://w3m.sourceforge.net)からでも観覧できます．
+なんとここは山Dのホームページです。[SvelteKit](https://kit.svelte.dev)で構築しています。[w3m](http://w3m.sourceforge.net)からでも観覧できます。
 
-ソースコードは<a href="/src.tgz" rel="external">こちら</a>から取得できます．
+ソースコードは<a href="/src.tgz" rel="external">こちら</a>から取得できます。
 
-**New :**
-最近流行りのIPFSに置いてみました．
+**New :** 最近流行りのIPFSに置いてみました。
 
-- ゲートウェイに[cloudflare-ipfs.com](https://www.cloudflare.com/distributed-web-gateway/)を使用
-  : [ipfs.yamad.me](https://ipfs.yamad.me)
+- ゲートウェイに[cloudflare-ipfs.com](https://www.cloudflare.com/distributed-web-gateway/)を使用 : [ipfs.yamad.me](https://ipfs.yamad.me)
 
-## # 連絡先
+## # リンク
 
 - E-mail  : <a href="https://me.dyama.net" target="_blank">me(at)dyama.net</a>
 - Twitter : <a href="https://twitter.com/_yamader" target="_blank">@_yamader</a>
+- Misskey : <a href="https://msk.seppuku.club/@yamad" target="_blank">@yamad@msk.seppuku.club</a>
 - Discord : <a href="https://discord.com/users/542656442876952586" target="_blank">YamaD#0142</a>
+- GitHub  : <a href="https://github.com/yamader" target="_blank">yamader</a>
 
 ## # OpenPGP Public Key
 
-<a href="/pub.asc" rel="external">/pub.asc</a>，WKD(direct)，CERT(PGP)から取得できます．ご入用の際にどうぞ．
+<a href="/pub.asc" rel="external">/pub.asc</a>，WKD(direct)，CERT(PGP)から取得できます。ご入用の際にどうぞ。
 
 ```
 % gpg --fetch-keys https://yamad.me/pub.asc

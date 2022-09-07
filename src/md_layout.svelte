@@ -1,18 +1,18 @@
 <script>
   import Meta from "$lib/meta.svelte"
 
-  /// @ts-ignore
+  // @ts-ignore
   export let title
-  /// @ts-ignore
+  // @ts-ignore
   export let description
-  /// @ts-ignore
+  // @ts-ignore
   export let noRobots
-  /// @ts-ignore
+  // @ts-ignore
   export let noTitleFormat
 </script>
 
 <Meta {...{
-  /// @ts-ignore
+  // @ts-ignore
   title, description, noRobots, noTitleFormat
 }} />
 

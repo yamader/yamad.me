@@ -2,7 +2,7 @@
 set -ex
 
 SRC=assets
-DST=static/assets/font
+DST=src/lib/assets
 
 rm -f $SRC/*.woff2
 

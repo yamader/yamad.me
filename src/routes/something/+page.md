@@ -3,16 +3,21 @@ title: Something
 description: なにか
 ---
 
+<script>
+  import broken from "./broken.jpg"
+</script>
+
 # Something
 
 ## # なけなしのコンテンツ
 
-というか無い．
+というか無い。
 
 ## # 作っているもの
 
 - [yamadOS](/os/) : 自作OS
 - [dish](/dish/) : 対話型シェル
+- [xpx](/xpx/) : 汎用点描画ライブラリ
 - [termisskey](/termisskey/) : MisskeyのTUIクライアント
 - [raytracing](/raytracing/) : 週末レイトレーシング
 
@@ -22,7 +27,7 @@ description: なにか
 
 ## # ギャラリー
 
-![PC break](/assets/img/broken.jpg)
+![PC break]({broken})
 *とある友人より*
 
 ## # 乞食
