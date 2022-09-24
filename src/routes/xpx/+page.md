@@ -9,9 +9,16 @@ description: 汎用点描画ライブラリ
 
 # xpx : 汎用点描画ライブラリ
 
+未完成のまま放置しちゃってます。
+すみません。
+
 - [github](https://github.com/yamader/xpx)
+<!-- https://github.com/yamader/xpx/archive/refs/tags/v0.1.tar.gz -->
+- [xpx-0.1.tgz](/assets/xpx-0.1.tgz)
 
 ## ギャラリー
+
+※画像はイメージです。
 
 ![ppm]({ppm})
 *ppmのお絵描き*
