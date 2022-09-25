@@ -12,10 +12,20 @@
     { url: "https://seppuku.club", name: "Blog" },
   ]
 
-  const konami = import("$lib/konami.svelte")
-  let konamiOpen: () => void
+  const term = import("$lib/term.svelte")
+  const kyle = import("$lib/kyle.svelte")
+
+  let termOpen: () => void
+  let kyleOpen: () => void
 
   if(browser) {
+    // Random kyle
+    if(Math.random() < .2) {
+      kyle.then(k => {
+        console.log(k)
+      })
+    }
+
     // Konami Code
     const command = [
       "ArrowUp",
@@ -31,9 +41,9 @@
     ]
     let cur = 0
     addEventListener("keydown", e => {
-      if (e.key === command[cur++]) {
-        if (cur === command.length) {
-          konamiOpen()
+      if(e.key === command[cur++]) {
+        if(cur === command.length) {
+          kyleOpen()
           cur = 0
         }
       } else {
@@ -48,14 +58,14 @@
     <nav class="headerNav">
       <ul class="headerLinks">
         {#each navLinks as { path, name }}
-          <li>
-            <a sveltekit:prefetch class:active={$page.url.pathname === path} href="{path}">{name}</a>
-          </li>
+        <li>
+          <a class:active={$page.url.pathname === path} href="{path}">{name}</a>
+        </li>
         {/each}
         {#each navLinksExt as { url, name }}
-          <li>
-            <a href="{url}" target="_blank" rel="external">{name}</a>
-          </li>
+        <li>
+          <a href="{url}" target="_blank" rel="external">{name}</a>
+        </li>
         {/each}
       </ul>
     </nav>
@@ -70,8 +80,12 @@
   </footer>
 </div>
 
-{#await konami then { default: Konami }}
-  <Konami bind:konamiOpen />
+{#await term then { default: Term }}
+<Term bind:termOpen />
+{/await}
+
+{#await kyle then { default: Kyle }}
+<Kyle bind:kyleOpen />
 {/await}
 
 <style lang="scss">
