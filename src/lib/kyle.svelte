@@ -7,5 +7,6 @@
 </script>
 
 {#if mount}
-<div>KYLE</div>
+<div>
+</div>
 {/if}

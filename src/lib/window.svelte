@@ -14,6 +14,7 @@
 
 <script lang="ts">
   const max = Math.max
+  // node:timers/promises 使わせろ
   const sleep = (ms: number) => new Promise(res => setTimeout(res, ms))
 
   let mount   = false
@@ -35,7 +36,7 @@
       case "open": return async (open = true) => {
         if(!visible && open) {
           mount = true
-          await sleep(10) // svelte.tickじゃダメだった
+          await sleep(15) // svelte.tickじゃダメだった
           visible = true
         }
       }

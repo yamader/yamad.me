@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { tick } from "svelte"
   import { page } from "$app/stores"
   import { browser } from "$app/environment"
   import "../app.scss"
@@ -20,9 +21,10 @@
 
   if(browser) {
     // Random kyle
-    if(Math.random() < .2) {
-      kyle.then(k => {
-        console.log(k)
+    if(Math.random() < .5) {
+      kyle.then(async () => {
+        await tick()
+        kyleOpen()
       })
     }
 
@@ -44,6 +46,7 @@
       if(e.key === command[cur++]) {
         if(cur === command.length) {
           kyleOpen()
+          termOpen()
           cur = 0
         }
       } else {
