@@ -4,6 +4,9 @@
   import { browser } from "$app/environment"
   import "../app.scss"
 
+  const term = import("$lib/term.svelte")
+  let termOpen: () => void
+
   const navLinks = [
     { path: "/", name: "Top" },
     { path: "/about/", name: "About" },
@@ -13,21 +16,7 @@
     { url: "https://seppuku.club", name: "Blog" },
   ]
 
-  const term = import("$lib/term.svelte")
-  const kyle = import("$lib/kyle.svelte")
-
-  let termOpen: () => void
-  let kyleOpen: () => void
-
   if(browser) {
-    // Random kyle
-    if(Math.random() < .5) {
-      kyle.then(async () => {
-        await tick()
-        kyleOpen()
-      })
-    }
-
     // Konami Code
     const command = [
       "ArrowUp",
@@ -45,7 +34,6 @@
     addEventListener("keydown", e => {
       if(e.key === command[cur++]) {
         if(cur === command.length) {
-          kyleOpen()
           termOpen()
           cur = 0
         }
@@ -85,10 +73,6 @@
 
 {#await term then { default: Term }}
 <Term bind:termOpen />
-{/await}
-
-{#await kyle then { default: Kyle }}
-<Kyle bind:kyleOpen />
 {/await}
 
 <style lang="scss">

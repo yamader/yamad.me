@@ -20,8 +20,9 @@
   let mount   = false
   let visible = false
   let moving  = false
-  let posx    = 100
-  let posy    = 100
+
+  export let posx = 100
+  export let posy = 100
 
   export let handler = (event: Event) => {
     switch(event) {
@@ -69,18 +70,20 @@
 </script>
 
 {#if mount}
-<section class="window acrylic" class:visible style="top: {max(0, posy)}px; left: {max(0, posx)}px">
+<section
+  class="window acrylic" class:visible
+  style="top:{max(0, posy)}px;left:{max(0, posx)}px"
+  tabindex="0"
+>
   <nav class="nav">
     <div class="bar" on:mousedown={mousedown}></div>
-    <div>
-      <div on:click={handler("buttonClose")}>
-        <!-- https://fontawesome.com/search?q=circle-xmark&o=r&m=free&s=solid -->
-        <svg class="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-          <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
-        </svg>
-      </div>
-    </div>
+    <button class="button" on:click={handler("buttonClose")} tabindex="-1">
+      <!-- https://fontawesome.com/search?q=circle-xmark&o=r&m=free&s=solid -->
+      <svg class="symbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" tabindex="0">
+        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+      </svg>
+    </button>
   </nav>
   <div class="content">
     <slot />
@@ -92,12 +95,15 @@
 <svelte:window on:mouseup={mouseup} on:mousemove={mousemove} />
 
 <style lang="scss">
-  @import "../styles/helpers.scss";
+  @import "../styles/variables.scss";
 
   .window {
     width: 1024px;
     height: 640px;
     position: absolute;
+    &:focus-within {
+      z-index: 1;
+    }
 
     opacity: 0;
     transform: scale(.9);
@@ -122,10 +128,17 @@
       }
 
       .button {
-        width: 16px;
-        height: 16px;
-        margin: 6px 8px 6px 0;
-        cursor: auto;
+        padding: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        .symbol {
+          width: 16px;
+          height: 16px;
+          margin: 6px 8px 6px 0;
+          color: $c-text;
+        }
       }
     }
 
@@ -133,9 +146,9 @@
       width: calc(100% - 16px);
       height: calc(100% - 36px);
       margin: 0 auto;
-      background: #000;
-      border: solid .5px rgba(255, 255, 255, .25);
+      border: solid .5px rgba(125, 125, 125, .25);
       border-radius: 8px;
+      overflow: scroll;
     }
   }
 </style>
