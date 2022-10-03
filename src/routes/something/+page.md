@@ -16,8 +16,8 @@ description: なにか
 ## # 作っているもの
 
 - [yamadOS](/os/) : 自作OS
+- [dinit](/dinit/) : 自作init
 - [dish](/dish/) : 対話型シェル
-- [dinit](/dinit/) : init
 - [termisskey](/termisskey/) : MisskeyのTUIクライアント
 - [raytracing](/raytracing/) : 週末レイトレーシング
 

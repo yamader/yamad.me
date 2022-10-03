@@ -1,8 +1,8 @@
 ---
 title: dinit
-description: init
+description: 自作init
 ---
 
-# dinit : init
+# dinit : 自作init
 
 - [github](https://github.com/yamader/dinit.git)
