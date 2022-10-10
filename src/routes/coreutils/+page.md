@@ -5,9 +5,10 @@ description: coreutilsもどき
 
 # coreutils : coreutilsもどき
 
-現状，複数の実装(笑)があります。
+現状，複数の実装があります。
 
-- [cxx](https://github.com/yamader/coreutils/tree/cxx)
-- [zig](https://github.com/yamader/coreutils/tree/zig)
+- [d](https://github.com/yamader/coreutils/tree/master/d)
+- [cxx](https://github.com/yamader/coreutils/tree/master/cxx)
+- [zig](https://github.com/yamader/coreutils/tree/master/zig)
 
 - [github](https://github.com/yamader/coreutils.git)
