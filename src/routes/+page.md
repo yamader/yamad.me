@@ -18,11 +18,11 @@ noTitleFormat: true
 
 ## # リンク
 
-- E-mail  : <a href="https://me.dyama.net" target="_blank">me(at)dyama.net</a>
-- Twitter : <a href="https://twitter.com/_yamader" target="_blank">@_yamader</a>
-- Misskey : <a href="https://msk.seppuku.club/@yamad" target="_blank">@yamad@msk.seppuku.club</a>
-- Discord : <a href="https://discord.com/users/542656442876952586" target="_blank">YamaD#0142</a>
-- GitHub  : <a href="https://github.com/yamader" target="_blank">yamader</a>
+- E-mail  : <a href="https://me.dyama.net" target="_blank" rel="noreferrer">me(at)dyama.net</a>
+- Twitter : <a href="https://twitter.com/_yamader" target="_blank" rel="noreferrer">@_yamader</a>
+- Misskey : <a href="https://msk.seppuku.club/@yamad" target="_blank" rel="noreferrer">@yamad@msk.seppuku.club</a>
+- Discord : <a href="https://discord.com/users/542656442876952586" target="_blank" rel="noreferrer">YamaD#0142</a>
+- GitHub  : <a href="https://github.com/yamader" target="_blank" rel="noreferrer">yamader</a>
 
 ## # OpenPGP Public Key
 

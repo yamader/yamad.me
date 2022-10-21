@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { tick } from "svelte"
   import { page } from "$app/stores"
   import { browser } from "$app/environment"
   import "../app.scss"
@@ -55,7 +54,7 @@
         {/each}
         {#each navLinksExt as { url, name }}
         <li>
-          <a href="{url}" target="_blank" rel="external">{name}</a>
+          <a href="{url}" target="_blank" rel="noreferrer">{name}</a>
         </li>
         {/each}
       </ul>
