@@ -1,5 +1,6 @@
 import { defineMDSveXConfig as defineConfig } from "mdsvex"
 import remarkMath from "remark-math"
+import rehypeSlug from "rehype-slug"
 import rehypeKatex from "rehype-katex-svelte"
 
 function highlighter(code, lang) {
@@ -11,6 +12,6 @@ export default defineConfig({
   smartypants: { dashes: "oldschool" },
   layout: "./src/md_layout.svelte",
   remarkPlugins: [remarkMath],
-  rehypePlugins: [rehypeKatex],
+  rehypePlugins: [rehypeSlug, rehypeKatex],
   highlight: { highlighter },
 })

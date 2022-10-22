@@ -9,7 +9,7 @@ description: 週末レイトレーシング
 
 # raytracing : 週末レイトレーシング
 
-- [github](https://github.com/yamader/raytracing)
+- [github](https://github.com/yamader/raytracing.git)
 
 ## ギャラリー
 

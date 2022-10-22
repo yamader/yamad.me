@@ -18,9 +18,12 @@ description: なにか
 - [yamadOS](/os/) : 自作OS
 - [dinit](/dinit/) : 自作init
 - [dish](/dish/) : 対話型シェル
+- [djvm](/djvm/) : JVM
+<!-- - [kchain](/kchain/) : ブロックチェーン -->
 - [coreutils](/coreutils/) : coreutilsもどき
 - [termisskey](/termisskey/) : MisskeyのTUIクライアント
 - [raytracing](/raytracing/) : 週末レイトレーシング
+- [mylib](/mylib/) : オレオレライブラリ
 
 ## # 作ったもの
 
