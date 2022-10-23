@@ -3,6 +3,10 @@ title: mylib
 description: オレオレライブラリ
 ---
 
+<script>
+  import logger from "./logger.png"
+</script>
+
 # mylib : オレオレライブラリ
 
 完全に自分用に作っています。
@@ -38,12 +42,7 @@ auto main(int argc, char* argv[]) -> int {"{"}
 
 ### [logger.hh](https://github.com/yamader/mylib/tree/master/cxx/logger.hh): ロガー
 
-```c++
-Context ctx;
-Log(ctx) {"<<"} "hello, world";
-Err(ctx) {"<<"} "Oops!";
-Fatal(ctx) {"<<"} "AAGGHHHH!";
-```
+![logger]({logger})
 
 ### [nullstream.hh](https://github.com/yamader/mylib/tree/master/cxx/nullstream.hh): 虚無stream
 
