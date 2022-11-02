@@ -6,10 +6,10 @@
     "sanitize.css": "13.0.0"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "1.0.0-next.46",
-    "@sveltejs/kit": "1.0.0-next.525",
-    "cssnano": "5.1.13",
-    "cssnano-preset-advanced": "5.3.8",
+    "@sveltejs/adapter-static": "1.0.0-next.47",
+    "@sveltejs/kit": "1.0.0-next.531",
+    "cssnano": "5.1.14",
+    "cssnano-preset-advanced": "5.3.9",
     "glob-run": "0.1.7",
     "js-beautify": "1.14.7",
     "mdsvex": "0.10.6",
@@ -17,16 +17,16 @@
     "postcss": "8.4.18",
     "postcss-load-config": "4.0.1",
     "rehype-katex-svelte": "1.1.2",
-    "rehype-slug": "5.0.1",
+    "rehype-slug": "5.1.0",
     "remark-math": "3.x",
     "sass": "1.55.0",
     "svelte": "3.52.0",
     "svelte-check": "2.9.2",
     "svelte-preprocess": "4.10.7",
     "svelte-sitemap": "2.5.2",
-    "tslib": "2.4.0",
+    "tslib": "2.4.1",
     "typescript": "4.8.4",
-    "vite": "3.1.8"
+    "vite": "3.2.2"
   },
   "scripts": {
     "build": "run-s build:arch build:static",
@@ -41,7 +41,7 @@
     "preview": "vite preview",
     "preview-host": "vite preview --host",
     "stage:404": "mv build/404/index.html build/404.html && rmdir build/404",
-    "stage:beautify": "html-beautify -r -s 2 -E [] --no-preserve-newlines 'build/**/*.html'",
+    "stage:beautify": "scripts/beautify.sh",
     "stage:kit": "vite build",
     "stage:sitemap": "svelte-sitemap -d https://yamad.me -i '404.html'"
   },

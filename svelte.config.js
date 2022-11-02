@@ -9,7 +9,7 @@ export default {
     adapter: adapter(),
     appDir: "app",
     prerender: {
-      onError: "continue",
+      handleHttpError: "warn",
     },
     trailingSlash: "always",
   },

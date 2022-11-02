@@ -34,7 +34,7 @@ noTitleFormat: true
 % gpg --locate-keys me(at)dyama.net
 ```
 
-Fingerprint ([master key](openpgp4fpr:0E3E1098B3129A37AFE6A5CF596E6A41B5517736)) :
+Fingerprint (<a href="openpgp4fpr:0E3E1098B3129A37AFE6A5CF596E6A41B5517736" rel="external">master key</a>) :
 
 ```
 0E3E 1098 B312 9A37 AFE6  A5CF 596E 6A41 B551 7736
