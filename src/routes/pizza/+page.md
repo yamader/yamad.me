@@ -1,6 +1,7 @@
 ---
-title: ピザ
-description: ふひゅーカット
+title: ピザ (ふひゅーカット)
+description: マジキチの所業
+noTitleFormat: true
 ---
 
 <style lang="scss">
