@@ -11,7 +11,6 @@ export default {
     prerender: {
       handleHttpError: "warn",
     },
-    trailingSlash: "always",
   },
   preprocess: [
     preprocess({ postcss: true }),

@@ -1,13 +1,13 @@
 {
   "name": "YamaD.me",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "dependencies": {
     "katex": "0.16.3",
     "sanitize.css": "13.0.0"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "1.0.0-next.48",
-    "@sveltejs/kit": "1.0.0-next.560",
+    "@sveltejs/kit": "1.0.0-next.561",
     "cssnano": "5.1.14",
     "cssnano-preset-advanced": "5.3.9",
     "js-beautify": "1.14.7",
@@ -33,8 +33,8 @@
     "build-ipfs": "scripts/ipfs.sh",
     "build:arch": "git archive --prefix=src/ -o static/src.tgz HEAD",
     "build:static": "run-s stage:kit stage:404 stage:sitemap stage:beautify",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check-watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "check": "svelte-kit sync && svelte-check --tsconfig tsconfig.json",
+    "check-watch": "svelte-kit sync && svelte-check --tsconfig tsconfig.json --watch",
     "dev": "vite dev",
     "dev-host": "vite dev --host",
     "preview": "vite preview",
@@ -42,7 +42,7 @@
     "stage:404": "mv build/404/index.html build/404.html && rmdir build/404",
     "stage:beautify": "scripts/beautify.sh",
     "stage:kit": "vite build",
-    "stage:sitemap": "svelte-sitemap -d https://yamad.me -i '404.html'"
+    "stage:sitemap": "svelte-sitemap -d https://yamad.me -i 404.html"
   },
   "type": "module"
 }
