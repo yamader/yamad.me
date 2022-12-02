@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "1.0.0-next.48",
-    "@sveltejs/kit": "1.0.0-next.561",
+    "@sveltejs/kit": "1.0.0-next.570",
     "cssnano": "5.1.14",
     "cssnano-preset-advanced": "5.3.9",
     "js-beautify": "1.14.7",
@@ -20,7 +20,7 @@
     "remark-math": "3.x",
     "sass": "1.56.1",
     "svelte": "3.53.1",
-    "svelte-check": "2.9.2",
+    "svelte-check": "2.10.0",
     "svelte-preprocess": "4.10.7",
     "svelte-sitemap": "2.5.3",
     "tslib": "2.4.1",
