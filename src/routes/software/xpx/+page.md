@@ -9,8 +9,7 @@ description: 汎用点描画ライブラリ
 
 # xpx : 汎用点描画ライブラリ
 
-未完成のまま放置しちゃってます。
-すみません。
+やろうとしているのはOpenGL的なことです。多分。
 
 - [github](https://github.com/yamader/xpx.git)
 <!-- https://github.com/yamader/xpx/archive/refs/tags/v0.1.tar.gz -->

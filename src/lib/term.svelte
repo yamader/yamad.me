@@ -6,7 +6,7 @@
   let exec: Exec
   export let termOpen
 
-  onMount(() => termOpen = exec("open"))
+  onMount(() => (termOpen = exec("open")))
 </script>
 
 <Window bind:exec>

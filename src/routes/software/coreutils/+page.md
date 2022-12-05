@@ -5,6 +5,7 @@ description: coreutilsもどき
 
 # coreutils : coreutilsもどき
 
+busyboxの方が近いかもしれません。
 現状，複数の実装があります。
 
 - [D](https://github.com/yamader/coreutils/tree/master/d)
