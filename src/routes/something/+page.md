@@ -12,6 +12,7 @@ description: なにか
 ## # ソフトウェア
 
 - [coreutils](/software/coreutils/) : coreutilsもどき
+- [cppub](/software/cppub/) : なんちゃってActivityPub
 - [dinit](/software/dinit/) : SysV互換init
 - [dish](/software/dish/) : 対話型シェル
 - [djvm](/software/djvm/) : 自作JVM
