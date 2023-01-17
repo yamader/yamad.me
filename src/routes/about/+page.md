@@ -65,9 +65,10 @@ description: 山Dについて
 
 ## # マシン
 
-- デスクトップ : Core 8500 / DDR4 128G / GeForce 1070 Ti
-- ラップトップ : Core 1165G7 / DDR4 16G / Iris Xe
-- サーバー : Ryzen 3100 / DDR4 16G
-- 漬物石 : Core 7500 / DDR4 20G / HD 630
+- デスクトップ : i5 8500 / DDR4 128G / GeForce 1070 Ti
+- ラップトップ : i7 1165G7 / DDR4 16G / Iris Xe
+- サーバー : Ryzen 3 3100 / DDR4 16G
+- 漬物石 : i5 7500 / DDR4 20G / HD 630
+- 懐古 : Core2 Duo P8700 / DDR3 3G / GMA 4500MHD
 - ネタ枠 : PowerPC 970 / DDR 1G / GeForce FX 5200 Ultra
 - その他がらくた
