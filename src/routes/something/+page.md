@@ -12,16 +12,21 @@ description: なにか
 ## # ソフトウェア
 
 - [coreutils](/software/coreutils/) : coreutilsもどき
-- [cppub](/software/cppub/) : なんちゃってActivityPub
 - [dinit](/software/dinit/) : SysV互換init
 - [dish](/software/dish/) : 対話型シェル
 - [djvm](/software/djvm/) : 自作JVM
+- [yamadOS](/software/yamados/) : 自作OS
+
+
+<!-- - [cppub](/software/cppub/) : なんちゃってActivityPub -->
 <!-- - [kchain](/software/kchain/) : ブロックチェーン -->
+<!-- - [minskey](/software/minskey/) : Misskeyフロントエンド -->
+<!-- - [termisskey](/software/termisskey/) : MisskeyのTUIクライアント -->
+
+
 - [mylib](/software/mylib/) : オレオレライブラリ
 - [raytracing](/software/raytracing/) : 週末レイトレーシング
-- [termisskey](/software/termisskey/) : MisskeyのTUIクライアント
 - [xpx](/software/xpx/) : 汎用点描画ライブラリ
-- [yamadOS](/software/yamados/) : 自作OS
 
 ## # その他
 
