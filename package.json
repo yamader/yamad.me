@@ -1,15 +1,15 @@
 {
   "name": "YamaD.me",
-  "version": "1.6.0",
+  "version": "1.9999.0",
   "dependencies": {
     "katex": "0.16.4",
     "sanitize.css": "13.0.0"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "1.0.4",
-    "@sveltejs/kit": "1.1.1",
-    "cssnano": "5.1.14",
-    "cssnano-preset-advanced": "5.3.9",
+    "@sveltejs/adapter-static": "2.0.1",
+    "@sveltejs/kit": "1.15.2",
+    "cssnano": "6.0.0",
+    "cssnano-preset-advanced": "6.0.0",
     "js-beautify": "1.14.7",
     "mdsvex": "0.10.6",
     "npm-run-all": "4.1.5",
@@ -18,15 +18,16 @@
     "rehype-katex-svelte": "1.1.2",
     "rehype-slug": "5.1.0",
     "remark-math": "3.x",
-    "sass": "1.57.1",
-    "svelte": "3.55.1",
-    "svelte-check": "3.0.2",
-    "svelte-preprocess": "5.0.0",
-    "svelte-sitemap": "2.5.4",
-    "tslib": "2.4.1",
-    "typescript": "4.9.4",
-    "vite": "4.0.4"
+    "sass": "1.61.0",
+    "svelte": "3.58.0",
+    "svelte-check": "3.2.0",
+    "svelte-preprocess": "5.0.3",
+    "svelte-sitemap": "2.6.0",
+    "tslib": "2.5.0",
+    "typescript": "5.0.4",
+    "vite": "4.2.1"
   },
+  "packageManager": "pnpm@8.1.1",
   "scripts": {
     "build": "run-s build:arch build:static",
     "build-font": "scripts/font.sh",

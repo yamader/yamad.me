@@ -22,7 +22,7 @@ description: 山Dについて
 
 `YamaD` もしくは `山D`
 
-某市立高専電子工学科の3年生です。いわゆる低レイヤに興味があります。
+某市立高専電子工学科の4年生です。いわゆる低レイヤに興味があります。
 
 <p>
   西暦<input type="number" class="yearNum" bind:value />年において，山Dは{#if value < birthYear}
@@ -40,8 +40,8 @@ description: 山Dについて
 - D : 普段はDを使っています
 - C, C++ : 必要に迫られたときに使います
 - $\LaTeX$ : レポート課題等で使います
-- OCaml : たまに書きます
-- Zig, Nim : 最近始めました
+- TypeScript, Kotlin, Flutter : そこそこ使います
+- Zig, OCaml, Elixir, Go : たまに書きます
 - Forth, Lisp, Rust : 勉強しています
 
 

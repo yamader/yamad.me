@@ -11,26 +11,40 @@ description: なにか
 
 ## # ソフトウェア
 
+飽き性なので全然完成しない。
+
+### ## 車輪の再発明シリーズ
+
 - [coreutils](/software/coreutils/) : coreutilsもどき
+<!-- - [dforth](/software/dforth/) : forth -->
 - [dinit](/software/dinit/) : SysV互換init
 - [dish](/software/dish/) : 対話型シェル
-- [djvm](/software/djvm/) : 自作JVM
-- [yamadOS](/software/yamados/) : 自作OS
-
-
-<!-- - [cppub](/software/cppub/) : なんちゃってActivityPub -->
+- [djvm](/software/djvm/) : JVM
+- [dpm](/software/dpm/) : パケマネ
+<!-- - [dv6](/software/dv6/) : xv6 -->
 <!-- - [kchain](/software/kchain/) : ブロックチェーン -->
-<!-- - [minskey](/software/minskey/) : Misskeyフロントエンド -->
+- [nasu](/software/nasu/) : doasもどき
+- [yamadOS](/software/yamados/) : OS
+
+### ## Web・アプリ系
+
+- [cjp-app](/software/cjp-app/) : 怪レい日本语
+- [DroidSKK](/software/droidskk/) : Android向けSKK
+- [Kosenle](/software/kosenle/) : W○rdle
+<!-- - [mfm](/software/mfm/) : MFMパーサ -->
+- [minskey](/software/minskey/) : Misskeyのフロントエンド
 <!-- - [termisskey](/software/termisskey/) : MisskeyのTUIクライアント -->
 
 
+- [1lil.li](/service/1lilli/) : URL短縮
+- [nubepedia](/service/nubepedia/) : キチツイ保管庫
+
+### ## その他
+
+- [denkon](/software/denkon/) : 電コンくん(内輪ネタ)
 - [mylib](/software/mylib/) : オレオレライブラリ
 - [raytracing](/software/raytracing/) : 週末レイトレーシング
 - [xpx](/software/xpx/) : 汎用点描画ライブラリ
-
-## # その他
-
-- [1lil.li](https://1lil.li/s/) : URL短縮
 
 ## # ギャラリー
 
