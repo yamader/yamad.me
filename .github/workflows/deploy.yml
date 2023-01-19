@@ -2,12 +2,10 @@ name: Deploy
 
 on:
   push:
-    branches:
-      - master
-  workflow_dispatch:
+    branches: [master]
 
 jobs:
-  gh-pages:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,11 +16,21 @@ jobs:
         with:
           node-version: lts/*
           cache: pnpm
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm i --frozen-lockfile
       - run: pnpm run build
-      - uses: peaceiris/actions-gh-pages@v3
+      - uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./build
-          cname: yamad.me
+          path: build
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v1
+        id: deployment

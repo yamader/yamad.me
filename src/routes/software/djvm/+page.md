@@ -1,10 +1,10 @@
 ---
 title: djvm
-description: 自作JVM
+description: JVM
 ---
 
-# djvm : 自作JVM
+# djvm : JVM
 
 hello, worldすらできません。
 
-- [github](https://github.com/yamader/djvm.git)
+- [GitHub](https://github.com/yamader/djvm)

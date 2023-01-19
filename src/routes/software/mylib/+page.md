@@ -12,7 +12,7 @@ description: オレオレライブラリ
 完全に自分用に作っています。
 仕様はコロコロ変わるし機能も貧弱なので，参考程度に……。
 
-- [github](https://github.com/yamader/mylib.git)
+- [GitHub](https://github.com/yamader/mylib)
 
 ## 目次
 

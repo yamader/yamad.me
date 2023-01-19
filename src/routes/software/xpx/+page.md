@@ -11,7 +11,7 @@ description: 汎用点描画ライブラリ
 
 やろうとしているのはOpenGL的なことです。多分。
 
-- [github](https://github.com/yamader/xpx.git)
+- [GitHub](https://github.com/yamader/xpx)
 <!-- https://github.com/yamader/xpx/archive/refs/tags/v0.1.tar.gz -->
 - [xpx-0.1.tgz](/assets/xpx-0.1.tgz)
 

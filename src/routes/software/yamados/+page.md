@@ -9,7 +9,7 @@ description: 自作OS
 
 # yamadOS : 自作OS
 
-- [github](https://github.com/yamader/os.git)
+- [GitHub](https://github.com/yamader/os)
 
 ## # 記事
 

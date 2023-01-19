@@ -12,4 +12,4 @@ busyboxの方が近いかもしれません。
 - [C++](https://github.com/yamader/coreutils/tree/master/cxx)
 - [Zig](https://github.com/yamader/coreutils/tree/master/zig)
 
-- [github](https://github.com/yamader/coreutils.git)
+- [GitHub](https://github.com/yamader/coreutils)
