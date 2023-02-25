@@ -40,8 +40,8 @@ description: 山Dについて
 - D : 普段はDを使っています
 - C, C++ : 必要に迫られたときに使います
 - $\LaTeX$ : レポート課題等で使います
-- TypeScript, Kotlin, Dart : 各種アプリ開発で使います
-- OCaml, Zig, Go : たまに書きます
+- TypeScript, Kotlin, Flutter : そこそこ使います
+- Zig, OCaml, Elixir, Go : たまに書きます
 - Forth, Lisp, Rust : 勉強しています
 
 
