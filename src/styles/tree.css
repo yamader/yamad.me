@@ -1,0 +1,28 @@
+/* https://stackoverflow.com/a/14424029 */
+
+.tree {
+  padding: 0;
+}
+
+.node {
+  margin-left: 1rem;
+  padding-left: 1.2rem;
+  position: relative;
+  list-style: none;
+  border-left: 2px solid white;
+
+  &:last-child {
+    border-left: 2px solid transparent;
+  }
+
+  &::before {
+    content: "";
+    width: 1rem;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    bottom: 44%;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+}

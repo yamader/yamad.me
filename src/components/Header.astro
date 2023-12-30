@@ -1,0 +1,66 @@
+---
+const links = [
+  { href: "/", name: "Top" },
+  { href: "/about/", name: "About" },
+  { href: "/something/", name: "Something" },
+  { href: "https://seppuku.club/", name: "Blog" },
+]
+---
+
+<nav>
+  {
+    links.map(({ href, name }) => (
+      <a href={href} class:list={[Astro.url.pathname === href && "active"]}>
+        {name}
+      </a>
+    ))
+  }
+</nav>
+
+<hr />
+
+{
+  Astro.url.pathname.split("/").length > 3 && (
+    <div style={{ background: "maroon" }}>
+      募: いい感じのパンくずリストのデザイン
+    </div>
+  )
+}
+
+<style>
+  hr {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    background: #111;
+  }
+
+  a {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0 0.35rem;
+    border-bottom: 1px solid #444;
+    color: currentColor;
+    font-size: 0.9rem;
+    text-decoration: none;
+
+    &:hover {
+      background: #181818;
+    }
+
+    &.active {
+      background: #222;
+      color: white;
+      border-bottom: 1px solid transparent;
+      font-weight: bold;
+    }
+  }
+
+  a + a {
+    border-left: 1px solid #333;
+  }
+</style>

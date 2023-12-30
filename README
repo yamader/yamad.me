@@ -1,0 +1,6 @@
+(´･_･`)
+
+public/assets/UDEVGothic35LG-*.woff2
+  -> https://github.com/yuru7/udev-gothic/releases/download/v1.3.1/UDEVGothic_v1.3.1.zip
+  -> UDEVGothic_v1.3.1/UDEVGothic35LG-*.ttf
+  -> npm run build-font

@@ -1,0 +1,54 @@
+/* reset */
+
+pre,
+ul {
+  margin-bottom: 0;
+}
+
+table {
+  margin-top: 1rem;
+}
+
+/* common */
+
+html {
+  font-family: "UDEV Gothic 35LG", sans-serif;
+}
+
+code {
+  font-family: "UDEV Gothic 35LG", monospace;
+  font-size: smaller;
+}
+
+h2 {
+  margin: 1.2rem -1rem 0;
+  padding: 0.5rem 1rem 0.4rem;
+  background-color: #333;
+
+  &::before {
+    content: "#";
+    margin-right: 0.5rem;
+  }
+}
+
+h3 {
+  &::before {
+    content: "##";
+    margin-right: 0.5rem;
+  }
+}
+
+hr {
+  width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+pre {
+  padding: 0.334rem 0.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid #334334;
+  line-height: 1.3;
+}

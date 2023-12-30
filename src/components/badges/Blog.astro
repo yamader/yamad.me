@@ -1,0 +1,16 @@
+---
+import { badgen } from "badgen"
+import "./badge.css"
+
+const { slug } = Astro.props
+---
+
+<a class="badge" href={"https://seppuku.club/" + slug + "/"}>
+  <Fragment
+    set:html={badgen({
+      label: "Blog",
+      status: slug,
+      color: "red",
+    })}
+  />
+</a>

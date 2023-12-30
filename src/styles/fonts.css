@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "UDEV Gothic 35LG";
+  src: url("/assets/UDEVGothic35LG-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UDEV Gothic 35LG";
+  src: url("/assets/UDEVGothic35LG-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-display: swap;
+}
