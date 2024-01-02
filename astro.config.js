@@ -8,7 +8,6 @@ export default defineConfig({
   trailingSlash: "always",
   scopedStyleStrategy: "class",
   build: { inlineStylesheets: "never" },
-  prefetch: { prefetchAll: true },
   image: { service: passthroughImageService() },
   markdown: {
     shikiConfig: { theme: "monokai" },
