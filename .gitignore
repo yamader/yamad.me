@@ -1,6 +1,6 @@
-node_modules/
-build/
-.svelte-kit/
-.pnpm-debug.log
+/dist
+/.astro
 
-static/src.tgz
+/node_modules
+
+/public/src.tgz

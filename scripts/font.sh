@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -ex
 
-SRC=assets
-DST=src/lib/assets
+SRC=public/assets
+DST=public/assets
 
 for f in $SRC/*; do
   if [ ${f##*.} = woff2 ]; then

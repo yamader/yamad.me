@@ -1,0 +1,74 @@
+---
+import Header from "~/components/Header.astro"
+import Footer from "~/components/Footer.astro"
+import "katex/dist/katex.min.css"
+import "~/styles/reset.css"
+import "~/styles/fonts.css"
+import "~/styles/global.css"
+
+const {
+  title = "$title",
+  realTitle = `${title} :: YamaD.me`,
+  description = "山Dのウェブサイト",
+  noRobots,
+} = Astro.props.frontmatter || Astro.props
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    {noRobots && <meta name="robots" content="none" />}
+    <title>{realTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:image" content="https://yamad.me/icon.png" />
+  </head>
+  <body>
+    <main>
+      <Header />
+      <div class="container">
+        <slot />
+      </div>
+      <Footer />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  html {
+    background: black;
+    color: white;
+  }
+
+  body {
+    display: flex;
+    margin: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 48rem;
+    overflow: hidden;
+    background: #222;
+
+    @media (width > 48rem) {
+      height: 100%; /* fit-content */
+      margin: 1rem auto;
+      border: 1px solid #383838;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+
+    & > :first-child {
+      margin-top: 1rem;
+    }
+  }
+</style>

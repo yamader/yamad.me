@@ -2,12 +2,18 @@
 set -e
 shopt -s globstar
 
-BEAUTIFY_OPTS="-s 2 -E [] --no-preserve-newlines"
+DIR=dist
 
-for f in build/**/*.html; do
+BEAUTIFY_OPTS='-s 2 -T pre -T textarea -T script -T style -E [] --no-preserve-newlines'
+
+for f in $DIR/**/*.html; do
   t=`mktemp`
-  echo "beautify $t -> $f"
-  perl -pe 's/<!--.*?-->//g' $f > $t
+  echo "beautifying $t -> $f"
+  perl -pe '
+    s/<!--.*?-->\s*//g;
+    s|/\* \@vite-ignore \*/\s*||g;
+    s|\(\n|\(|g;
+  ' $f > $t
   html-beautify $BEAUTIFY_OPTS $t > $f
   rm $t
 done

@@ -1,0 +1,37 @@
+---
+import { badgen } from "badgen"
+import "./badge.css"
+
+async function updated() {
+  const fallback = "9315-19-19T11:45:14Z"
+  if (import.meta.env.DEV) return fallback
+  const res = await fetch(
+    `https://api.github.com/repos/${repo}/commits?author=yamader`,
+    { headers: { Authorization: "Bearer " + import.meta.env.GITHUB_TOKEN } },
+  )
+  if (!res.ok) {
+    console.error(res)
+    return fallback
+  }
+  const body = await res.json()
+  try {
+    return body[0].commit.author.date
+  } catch {
+    console.error(body)
+    return fallback
+  }
+}
+
+const { repo } = Astro.props
+const date = await updated()
+---
+
+<a class="badge" href={"https://github.com/" + repo}>
+  <Fragment
+    set:html={badgen({
+      label: "GitHub",
+      status: date,
+      color: "blue",
+    })}
+  />
+</a>

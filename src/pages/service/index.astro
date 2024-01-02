@@ -1,0 +1,21 @@
+---
+import Layout from "~/layouts/Layout.astro"
+import { getCollection } from "astro:content"
+import "~/styles/tree.css"
+
+const services = await getCollection("service")
+---
+
+<Layout title="Service" description="作ったサービス">
+  <h1>Service</h1>
+
+  <ul class="tree">
+    {
+      services.map(e => (
+        <li class="node">
+          <a href={e.slug + "/"}>{e.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
