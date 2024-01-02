@@ -18,6 +18,6 @@ export default defineConfig({
   integrations: [mdx(), qwikdev()],
   vite: {
     css: { transformer: "lightningcss" },
-    build: { cssMinify: "lightningcss" },
+    // build: { cssMinify: "lightningcss" },
   },
 })

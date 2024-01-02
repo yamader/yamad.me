@@ -1,0 +1,40 @@
+name: Pages
+
+on:
+  push:
+    branches: [current]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      #- uses: actions/configure-pages@v4
+      - uses: oven-sh/setup-bun@v1
+      - run: bun i
+      - run: bun run build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          cname: yamad.me
+          force_orphan: true
+      #- uses: actions/upload-pages-artifact@v3
+      #  with:
+      #    path: dist
+
+#  deploy:
+#    permissions:
+#      id-token: write
+#      pages: write
+#    needs: build
+#    environment:
+#      name: github-pages
+#      url: ${{ steps.deploy.outputs.page_url }}
+#    runs-on: ubuntu-latest
+#    steps:
+#      - id: deploy
+#        uses: actions/deploy-pages@v4
