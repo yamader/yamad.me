@@ -26,8 +26,7 @@ realTitle: YamaD.me
 
 ## OpenPGP Public Key
 
-ご入用の際にどうぞ。
-オフ会等で随時交換できます。
+ご入用の際にどうぞ。オフ会等で随時交換できます。
 
 [Master key](openpgp4fpr:0E3E1098B3129A37AFE6A5CF596E6A41B5517736) fingerprint:
 ```
