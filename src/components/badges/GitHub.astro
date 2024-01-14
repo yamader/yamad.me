@@ -5,10 +5,9 @@ import "./badge.css"
 async function updated() {
   const fallback = "9315-19-19T11:45:14Z"
   if (import.meta.env.DEV) return fallback
-  const res = await fetch(
-    `https://api.github.com/repos/${repo}/commits?author=yamader`,
-    { headers: { Authorization: "Bearer " + import.meta.env.GITHUB_TOKEN } },
-  )
+  const res = await fetch(`https://api.github.com/repos/${repo}/commits?author=yamader`, {
+    headers: { Authorization: "Bearer " + import.meta.env.GITHUB_TOKEN },
+  })
   if (!res.ok) {
     console.error(res)
     return fallback
