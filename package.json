@@ -2,7 +2,7 @@
   "name": "yamad.me",
   "version": "2.0.2",
   "dependencies": {
-    "@builder.io/qwik": "1.4.1",
+    "@builder.io/qwik": "1.4.2",
     "katex": "0.16.9",
     "svelte": "4.2.9"
   },
@@ -10,8 +10,8 @@
     "@astrojs/check": "0.4.1",
     "@astrojs/mdx": "2.1.0",
     "@astrojs/svelte": "5.0.3",
-    "@qwikdev/astro": "0.5.0",
-    "astro": "4.2.5",
+    "@qwikdev/astro": "0.5.1",
+    "astro": "4.2.6",
     "badgen": "3.2.3",
     "js-beautify": "1.14.11",
     "lightningcss": "1.23.0",
