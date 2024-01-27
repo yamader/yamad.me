@@ -14,11 +14,8 @@ description: なにか
 
 - [yamadOS](/software/yamados/) : OS
 - [c1](/software/c1/) : コンパイラ
-- [minhs](/software/minhs/) : 関数型言語のインタプリタ
-- [dname](/software/dname/) : 権威
-- [djvm](/software/djvm/) : JVM
-- [dinit](/software/dinit/) : SysV互換init
-- [coreutils](/software/coreutils/) : coreutilsもどき
+- [minhs](/software/minhs/) : 関数型言語のインタプリタ<!-- - [dname](/software/dname/) : 権威 -->
+- [djvm](/software/djvm/) : JVM<!-- - [dinit](/software/dinit/) : SysV互換init --><!-- - [coreutils](/software/coreutils/) : coreutilsもどき -->
 - [nasu](/software/nasu/) : doasもどき
 
 ### Web
@@ -26,11 +23,11 @@ description: なにか
 - [1lil.li](/service/1lilli/) : URL短縮
 - [minskey](/software/minskey/) : Misskeyのフロントエンド
 - [lav](/software/lav/) : Load AVerage
-- [yamadom](/software/yamadom/) : Virtual DOM
+<!-- - [yamadom](/software/yamadom/) : Virtual DOM -->
 
 ### アプリ
 
-- [DroidSKK](/software/droidskk/) : Android向けSKK
+<!-- - [DroidSKK](/software/droidskk/) : Android向けSKK -->
 - [cjp-app](/software/cjp-app/) : 怪レい日本语
 - [accounter](/software/accounter/) : 家計簿アプリ
 

@@ -1,6 +1,6 @@
 ---
 import { badgen } from "badgen"
-import "./badge.css"
+import "./style.css"
 
 async function updated() {
   const fallback = "9315-19-19T11:45:14Z"
@@ -8,10 +8,7 @@ async function updated() {
   const res = await fetch(`https://api.github.com/repos/${repo}/commits?author=yamader`, {
     headers: { Authorization: "Bearer " + import.meta.env.GITHUB_TOKEN },
   })
-  if (!res.ok) {
-    console.error(res)
-    return fallback
-  }
+  if (!res.ok) return fallback
   const body = await res.json()
   try {
     return body[0].commit.author.date
