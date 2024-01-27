@@ -7,10 +7,10 @@ realTitle: YamaD.me
 
 ## ようこそ
 
-- なんとここは山Dのホームページです。
-- [Astro](https://astro.build/)で構築しています。
-- [w3m](http://w3m.sourceforge.net/)からでも閲覧できます。
-- ソースコードは[ここ](src.tgz)から取得できます。
+- なんとここは山Dのホームページです
+- [Astro](https://astro.build/)で構築しています
+- [w3m](http://w3m.sourceforge.net/)からでも閲覧できます
+- ソースコードは[ここ](src.tgz)から取得できます
 - IPFS版もあります: [ipfs.yamad.me](ipns://ipfs.yamad.me/)
 
 ## Hyperlinks
