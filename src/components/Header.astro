@@ -5,6 +5,8 @@ const links = [
   { href: "/something/", name: "Something" },
   { href: "https://seppuku.club/", name: "Blog" },
 ]
+
+const urlPathName = Astro.url.pathname.split("/").filter(p => p)
 ---
 
 <nav>
@@ -20,8 +22,16 @@ const links = [
 <hr />
 
 {
-  Astro.url.pathname.split("/").length > 3 && (
-    <div style={{ background: "maroon" }}>募: いい感じのパンくずリストのデザイン</div>
+  urlPathName.length > 1 && (
+    <ul class="breadcrumb" role="navigation">
+      {urlPathName.map((p, i) => (
+        <li>
+          <a href={"/" + urlPathName.slice(0, i + 1).join("/") + "/"}>{p}</a>
+          {/*ここCSSで動かせればいいなぁ */}
+          {i != urlPathName.length - 1 && ">"}
+        </li>
+      ))}
+    </ul>
   )
 }
 
@@ -33,6 +43,12 @@ const links = [
   nav {
     display: flex;
     background: #111;
+
+    a {
+      &:hover {
+        background: #181818;
+      }
+    }
   }
 
   a {
@@ -46,10 +62,6 @@ const links = [
     font-size: 0.9rem;
     text-decoration: none;
 
-    &:hover {
-      background: #181818;
-    }
-
     &.active {
       background: #222;
       color: white;
@@ -60,5 +72,30 @@ const links = [
 
   a + a {
     border-left: 1px solid #333;
+  }
+
+  .breadcrumb {
+    /* リセットCSSが動いてない？ */
+    margin-block: 0;
+    padding-inline-start: 0;
+
+    /* スタイルここから */
+    background-color: maroon;
+    display: flex;
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+
+      a {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
   }
 </style>
