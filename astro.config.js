@@ -6,6 +6,7 @@ import rehypeKatex from "rehype-katex"
 import remarkMath from "remark-math"
 
 export default defineConfig({
+  site: "https://yamad.me",
   trailingSlash: "always",
   scopedStyleStrategy: "class",
   build: { inlineStylesheets: "never" },

@@ -24,7 +24,10 @@ const {
     {noRobots && <meta name="robots" content="none" />}
     <title>{realTitle}</title>
     <meta name="description" content={description} />
-    <meta property="og:image" content="https://yamad.me/icon.png" />
+    <meta property="og:title" content={realTitle} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:image" content={Astro.site + "icon.png"} />
   </head>
   <body>
     <main>
