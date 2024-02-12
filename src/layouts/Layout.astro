@@ -21,9 +21,9 @@ const {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    {noRobots && <meta name="robots" content="none" />}
     <title>{realTitle}</title>
     <meta name="description" content={description} />
+    {noRobots && <meta name="robots" content="none" />}
     <meta property="og:title" content={realTitle} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
