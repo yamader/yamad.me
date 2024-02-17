@@ -1,12 +1,13 @@
 ---
-import Header from "~/components/Header.astro"
-import Footer from "~/components/Footer.astro"
+import { ViewTransitions } from "astro:transitions"
 import EasterEgg from "~/components/EasterEgg"
+import Header from "~/components/Header.astro"
 
 import "katex/dist/katex.min.css"
 import "~/styles/reset.css"
 import "~/styles/fonts.css"
 import "~/styles/global.css"
+import "~/styles/utils.css"
 
 const {
   title = "$title",
@@ -16,7 +17,6 @@ const {
 } = Astro.props.frontmatter || Astro.props
 ---
 
-<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
@@ -28,53 +28,63 @@ const {
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:image" content={Astro.site + "icon.png"} />
+    <ViewTransitions />
   </head>
   <body>
     <main>
       <Header />
+      <hr />
       <div class="container">
         <slot />
       </div>
-      <Footer />
+      <hr />
+      <footer>
+        <small>&copy; 2020-2024 YamaD</small>
+      </footer>
     </main>
-    <EasterEgg />
+    <EasterEgg transition:persist />
+
+    <style is:global>
+      html {
+        background: black;
+        color: white;
+      }
+
+      body {
+        display: flex;
+        margin: 0;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 48rem;
+        background: #222;
+
+        @media (width > 48rem) {
+          height: 100%; /* fit-content */
+          margin: 1.5rem auto;
+          border: 1px solid #383838;
+          border-radius: 0.5rem;
+        }
+      }
+
+      footer {
+        margin-top: auto;
+        padding: 0.5rem 0;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+
+        & > :first-child {
+          margin-top: 1rem;
+        }
+      }
+    </style>
   </body>
 </html>
-
-<style is:global>
-  html {
-    background: black;
-    color: white;
-  }
-
-  body {
-    display: flex;
-    margin: 0;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 48rem;
-    overflow: hidden;
-    background: #222;
-
-    @media (width > 48rem) {
-      height: 100%; /* fit-content */
-      margin: 1.5rem auto;
-      border: 1px solid #383838;
-      border-radius: 0.5rem;
-    }
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem;
-
-    & > :first-child {
-      margin-top: 1rem;
-    }
-  }
-</style>

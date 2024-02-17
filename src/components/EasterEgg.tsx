@@ -1,12 +1,5 @@
-import {
-  component$,
-  createContextId,
-  useContextProvider,
-  useSignal,
-  useVisibleTask$,
-  type Signal,
-} from "@builder.io/qwik"
-import Term from "./Term"
+import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik"
+import Launcher from "~/apps/Launcher"
 
 const command = [
   "ArrowUp",
@@ -21,12 +14,9 @@ const command = [
   "a",
 ]
 
-export const easterCtx = createContextId<Signal<boolean>>("easter")
-
 export default component$(() => {
   const cur = useSignal(0)
   const easter = useSignal(false)
-  useContextProvider(easterCtx, easter)
 
   useVisibleTask$(() => {
     console.log("%cこんにちは!", "color: red; font-size: 8em; font-weight: bold;")
@@ -43,5 +33,5 @@ export default component$(() => {
     })
   })
 
-  return easter.value && <Term />
+  return <Launcher launchSignal={easter} />
 })

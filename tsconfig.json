@@ -1,6 +1,7 @@
 {
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
+    "resolvePackageJsonExports": false, // wtf
     "jsx": "react-jsx",
     "jsxImportSource": "@builder.io/qwik",
     "baseUrl": ".",
