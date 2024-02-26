@@ -5,17 +5,17 @@
     "@builder.io/qwik": "1.4.5",
     "katex": "0.16.9",
     "qwik-transition": "0.0.7",
-    "svelte": "4.2.11"
+    "svelte": "4.2.12"
   },
   "devDependencies": {
-    "@astrojs/check": "0.5.4",
+    "@astrojs/check": "0.5.6",
     "@astrojs/mdx": "2.1.1",
-    "@astrojs/svelte": "5.0.3",
-    "@qwikdev/astro": "0.5.2",
-    "astro": "4.4.0",
+    "@astrojs/svelte": "5.1.0",
+    "@qwikdev/astro": "0.5.7",
+    "astro": "4.4.5",
     "badgen": "3.2.3",
     "js-beautify": "1.15.1",
-    "lightningcss": "1.23.0",
+    "lightningcss": "1.24.0",
     "prettier": "3.2.5",
     "prettier-plugin-astro": "0.13.0",
     "prettier-plugin-organize-imports": "3.2.4",
