@@ -12,11 +12,11 @@ table {
 /* common */
 
 html {
-  font-family: "UDEV Gothic 35LG", sans-serif;
+  font-family: var(--f-sans);
 }
 
 code {
-  font-family: "UDEV Gothic 35LG", monospace;
+  font-family: var(--f-mono);
   font-size: smaller;
 }
 
@@ -39,7 +39,7 @@ h3 {
 }
 
 hr {
-  width: 100%;
+  display: none;
 }
 
 img {

@@ -10,7 +10,7 @@ for f in $DIR/**/*.html; do
   t=`mktemp`
   echo "beautifying $t -> $f"
   perl -pe '
-    s/<!--.*?-->\s*//g;
+    s|\}\n|\}|g;
     s|/\* \@vite-ignore \*/\s*||g;
     s|\(\n|\(|g;
   ' $f > $t

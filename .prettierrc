@@ -1,7 +1,7 @@
 {
-  "printWidth": 80,
+  "printWidth": 100,
   "semi": false,
   "bracketSameLine": true,
   "arrowParens": "avoid",
-  "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-astro"]
+  "plugins": ["prettier-plugin-astro", "prettier-plugin-organize-imports", "prettier-plugin-svelte"]
 }

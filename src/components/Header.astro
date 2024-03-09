@@ -17,21 +17,13 @@ const links = [
   }
 </nav>
 
-<hr />
-
 {
   Astro.url.pathname.split("/").length > 3 && (
-    <div style={{ background: "maroon" }}>
-      募: いい感じのパンくずリストのデザイン
-    </div>
+    <div style={{ background: "maroon" }}>募: いい感じのパンくずリストのデザイン</div>
   )
 }
 
 <style>
-  hr {
-    display: none;
-  }
-
   nav {
     display: flex;
     background: #111;

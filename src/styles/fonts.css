@@ -1,3 +1,8 @@
+:root {
+  --f-sans: "UDEV Gothic 35LG", monospace;
+  --f-mono: "UDEV Gothic 35LG", monospace;
+}
+
 @font-face {
   font-family: "UDEV Gothic 35LG";
   src: url("/assets/UDEVGothic35LG-Regular.woff2") format("woff2");
