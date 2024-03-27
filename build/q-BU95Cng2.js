@@ -1,0 +1,1 @@
+import{$ as r}from"./q-C1g6vH8z.js";import{w as u}from"./q-C1g6vH8z.js";import{_auto_command as o}from"./q-LTsjOGVC.js";const l=()=>{const[e,t]=r();console.log("%cこんにちは!","color: red; font-size: 8em; font-weight: bold;"),document.addEventListener("keydown",a=>{a.key==o[e.value++]?e.value==o.length&&(t.value=!0,e.value=0):e.value=0})};export{u as _hW,l as s_YIb5w0sH7sg};

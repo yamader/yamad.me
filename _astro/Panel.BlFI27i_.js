@@ -1,0 +1,1 @@
+import{e as n,k as u,E as s,P as l,W as e}from"./Window.Bb8-VkBN.js";const a=()=>s(e,{children:l("p",null,null,["インターネットをいつも",l("br",null,null,null,3,null),"綺麗に使っていただき",l("br",null,null,null,3,null),"ありがとうございます。"],3,null)},3,"Jo_0"),t=n(u(a,"s_5CeBYqFtASU"));export{t as default};

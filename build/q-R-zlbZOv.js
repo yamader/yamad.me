@@ -1,0 +1,1 @@
+import n from"./q-Ay7jjecV.js";import{E as u,P as l}from"./q-C1g6vH8z.js";const t=()=>u(n,{children:l("p",null,null,["インターネットをいつも",l("br",null,null,null,3,null),"綺麗に使っていただき",l("br",null,null,null,3,null),"ありがとうございます。"],3,null)},3,"Jo_0");export{t as s_5CeBYqFtASU};

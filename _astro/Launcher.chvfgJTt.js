@@ -1,0 +1,1 @@
+import{e as l,k as e,E as s,P as t,K as c,M as u,W as r}from"./Window.Bb8-VkBN.js";const i=a=>s(r,{get active(){return a.launchSignal},children:t("p",null,null,"hello!",3,null),[c]:{active:u(n=>n.launchSignal,[a])}},3,"XV_0"),h=l(e(i,"s_IGT4ajwGHv4"));export{h as default};

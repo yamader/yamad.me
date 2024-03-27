@@ -1,0 +1,113 @@
+{
+  "manifestHash": "456rd6",
+  "symbols": {},
+  "mapping": {},
+  "bundles": {
+    "about.782386aa.l0sNRNKZ.js": {
+      "size": 1,
+      "origins": [
+        "src/components/YO.svelte?svelte&type=style&lang.css"
+      ]
+    },
+    "client.Cx1FBVJX.js": {
+      "size": 612,
+      "origins": [
+        "node_modules/@astrojs/svelte/client.js"
+      ]
+    },
+    "EasterEgg.DcaxwHkL.js": {
+      "size": 628,
+      "imports": [
+        "Launcher.chvfgJTt.js",
+        "Window.Bb8-VkBN.js"
+      ],
+      "origins": [
+        "src/components/EasterEgg.tsx"
+      ]
+    },
+    "Launcher.chvfgJTt.js": {
+      "size": 274,
+      "imports": [
+        "Window.Bb8-VkBN.js"
+      ],
+      "origins": [
+        "src/apps/Launcher.tsx"
+      ]
+    },
+    "Panel.BlFI27i_.js": {
+      "size": 281,
+      "imports": [
+        "Window.Bb8-VkBN.js"
+      ],
+      "origins": [
+        "src/apps/Panel.tsx"
+      ]
+    },
+    "Term.BLE61vGJ.js": {
+      "size": 187,
+      "imports": [
+        "Window.Bb8-VkBN.js"
+      ],
+      "origins": [
+        "src/apps/Term.tsx"
+      ]
+    },
+    "Window.Bb8-VkBN.js": {
+      "size": 49442,
+      "origins": [
+        "node_modules/@builder.io/qwik/core.min.mjs",
+        "node_modules/qwik-transition/dist/index.qwik.mjs",
+        "src/components/Window.tsx"
+      ]
+    },
+    "Window.CloRCQ1a.js": {
+      "size": 110,
+      "imports": [
+        "Window.Bb8-VkBN.js"
+      ]
+    },
+    "YO.B4dazwGV.js": {
+      "size": 7083,
+      "imports": [
+        "about.782386aa.l0sNRNKZ.js"
+      ],
+      "origins": [
+        "node_modules/svelte/src/runtime/internal/Component.js",
+        "node_modules/svelte/src/runtime/internal/disclose-version/index.js",
+        "node_modules/svelte/src/runtime/internal/dom.js",
+        "node_modules/svelte/src/runtime/internal/lifecycle.js",
+        "node_modules/svelte/src/runtime/internal/scheduler.js",
+        "node_modules/svelte/src/runtime/internal/transitions.js",
+        "node_modules/svelte/src/runtime/internal/utils.js",
+        "node_modules/svelte/src/shared/version.js",
+        "src/components/YO.svelte"
+      ]
+    }
+  },
+  "injections": [
+    {
+      "tag": "style",
+      "location": "head",
+      "attributes": {
+        "data-src": "/_astro/style.lheCl6ng.css",
+        "dangerouslySetInnerHTML": ".form.svelte-1mqop77{width:6em;margin:0 .3em}\n"
+      }
+    }
+  ],
+  "version": "1",
+  "options": {
+    "target": "client",
+    "buildMode": "production",
+    "entryStrategy": {
+      "type": "hoist"
+    }
+  },
+  "platform": {
+    "qwik": "1.5.1",
+    "vite": "",
+    "rollup": "4.13.1",
+    "env": "node",
+    "os": "linux",
+    "node": "18.19.1"
+  }
+}

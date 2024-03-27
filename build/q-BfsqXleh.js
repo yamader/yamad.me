@@ -1,0 +1,1 @@
+import a from"./q-Ay7jjecV.js";import{E as r,P as t,K as e,M as i}from"./q-C1g6vH8z.js";const c=n=>r(a,{get active(){return n.launchSignal},children:t("p",null,null,"hello!",3,null),[e]:{active:i(l=>l.launchSignal,[n])}},3,"XV_0");export{c as s_IGT4ajwGHv4};

@@ -1,0 +1,1 @@
+import{$ as o}from"./q-C1g6vH8z.js";import{w as s}from"./q-C1g6vH8z.js";const r=t=>{const[a]=o();a.grab&&(a.x=Math.max(0,t.pageX-a.dx),a.y=Math.max(0,t.pageY-a.dy))};export{s as _hW,r as s_gtHBSmC0qS4};

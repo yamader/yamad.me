@@ -1,0 +1,1 @@
+import{$ as c}from"./q-C1g6vH8z.js";import{w as x}from"./q-C1g6vH8z.js";const w=({track:i})=>{const[t,r,s,o]=c();i(t)&&(o.x=window.scrollX+r,o.y=window.scrollY+s)};export{x as _hW,w as s_g4QAZP8vuSc};
