@@ -9,10 +9,10 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.5.10",
-    "@astrojs/mdx": "2.2.1",
+    "@astrojs/mdx": "2.2.2",
     "@astrojs/svelte": "5.2.0",
     "@qwikdev/astro": "0.5.13",
-    "astro": "4.5.9",
+    "astro": "4.5.12",
     "badgen": "3.2.3",
     "js-beautify": "1.15.1",
     "lightningcss": "1.24.1",
