@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ex
 
-SRC=public/assets
+SRC=assets
 DST=public/assets
 
 for f in $SRC/*; do
