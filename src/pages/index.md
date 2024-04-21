@@ -28,7 +28,7 @@ realTitle: YamaD.me
 
 ご入用の際にどうぞ。オフ会等で随時交換できます。
 
-[Master key fingerprint](openpgp4fpr:0E3E1098B3129A37AFE6A5CF596E6A41B5517736):
+Master key [fingerprint](openpgp4fpr:0E3E1098B3129A37AFE6A5CF596E6A41B5517736):
 ```
 0E3E 1098 B312 9A37 AFE6  A5CF 596E 6A41 B551 7736
 ```
