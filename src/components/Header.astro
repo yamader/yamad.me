@@ -9,10 +9,12 @@ const links = [
 
 <!-- prettier-ignore -->
 <nav>{
-  links.map(({ href, name }) =>
-    // prettier-ignore
-    <a href={href} class:list={[Astro.url.pathname === href && "active"]}>{name}</a>,
-  )
+  links.map(({ href, name }) => {
+    const active = href == "/"
+      ? Astro.url.pathname == href
+      : Astro.url.pathname.startsWith(href)
+    return <a href={href} class:list={[active && "active"]}>{name}</a>
+  })
 }</nav>
 
 {
