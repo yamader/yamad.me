@@ -1,0 +1,28 @@
+---
+import Layout from "~/layouts/Layout.astro"
+import { getEntry } from "astro:content"
+
+const { data } = await getEntry("data", "movie")
+---
+
+<Layout title="Movie" description="映画">
+  <h1>映画</h1>
+  <p>主にサブスクで観たやつ。漏れあり。2024年5月時点。</p>
+  <ul>
+    {
+      data.map((e: any) => {
+        if (typeof e == "string") return <li>{e}</li>
+        const [series, entries]: any = Object.entries(e)[0]
+        return (
+          // prettier-ignore
+          <li>{series}<ul>
+              {entries.map((e: string) => (
+                <li>{e}</li>
+              ))}
+            </ul>
+          </li>
+        )
+      })
+    }
+  </ul>
+</Layout>

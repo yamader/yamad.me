@@ -12,6 +12,7 @@ for f in $DIR/**/*.html; do
   perl -pe '
     s|\}\n|\}|g;
     s|/\* \@vite-ignore \*/\s*||g;
+    s|<!-- prettier-ignore -->\s*||g;
     s|\(\n|\(|g;
   ' $f > $t
   html-beautify $BEAUTIFY_OPTS $t > $f

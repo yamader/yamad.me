@@ -7,15 +7,15 @@ const links = [
 ]
 ---
 
-<nav>
-  {
-    links.map(({ href, name }) => (
-      <a href={href} class:list={[Astro.url.pathname === href && "active"]}>
-        {name}
-      </a>
-    ))
-  }
-</nav>
+<!-- prettier-ignore -->
+<nav>{
+  links.map(({ href, name }) => {
+    const active = href == "/"
+      ? Astro.url.pathname == href
+      : Astro.url.pathname.startsWith(href)
+    return <a href={href} class:list={[active && "active"]}>{name}</a>
+  })
+}</nav>
 
 {
   Astro.url.pathname.split("/").length > 3 && (

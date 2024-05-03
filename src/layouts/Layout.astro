@@ -15,9 +15,12 @@ const {
   description = "山Dのウェブサイト",
   noRobots,
 } = Astro.props.frontmatter || Astro.props
+
+// <html lang="ja" transition:animate="none">
+// <ViewTransitions />
 ---
 
-<html lang="ja" transition:animate="none">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -28,7 +31,6 @@ const {
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:image" content={Astro.site + "icon.png"} />
-    <ViewTransitions />
   </head>
   <body>
     <main>
@@ -60,6 +62,7 @@ const {
         flex-direction: column;
         width: 100%;
         max-width: 48rem;
+        overflow: hidden;
         background: #222;
 
         @media (width > 48rem) {

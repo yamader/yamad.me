@@ -1,17 +1,17 @@
 :root {
-  --f-sans: "UDEV Gothic 35LG", monospace;
-  --f-mono: "UDEV Gothic 35LG", monospace;
+  --f-sans: "Firge", monospace;
+  --f-mono: "Firge", monospace;
 }
 
 @font-face {
-  font-family: "UDEV Gothic 35LG";
-  src: url("/assets/UDEVGothic35LG-Regular.woff2") format("woff2");
+  font-family: "Firge";
+  src: url("/assets/Firge35-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "UDEV Gothic 35LG";
-  src: url("/assets/UDEVGothic35LG-Bold.woff2") format("woff2");
+  font-family: "Firge";
+  src: url("/assets/Firge35-Bold.woff2") format("woff2");
   font-weight: bold;
   font-display: swap;
 }
