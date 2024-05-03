@@ -1,6 +1,6 @@
 {
   "name": "yamad.me",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "dependencies": {
     "@builder.io/qwik": "1.5.3",
     "katex": "0.16.10",
