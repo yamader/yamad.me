@@ -4,16 +4,17 @@ import "./style.css"
 
 async function updated() {
   const fallback = "9315-19-19T11:45:14Z"
-  if (import.meta.env.DEV) return fallback
+  const token = import.meta.env.GITHUB_TOKEN
+  if (!token) return fallback
   const res = await fetch(`https://api.github.com/repos/${repo}/commits?author=yamader`, {
-    headers: { Authorization: "Bearer " + import.meta.env.GITHUB_TOKEN },
+    headers: { Authorization: "Bearer " + token },
   })
   if (!res.ok) return fallback
-  const body = await res.json()
   try {
+    const body = await res.json()
     return body[0].commit.author.date
-  } catch {
-    console.error(body)
+  } catch (e) {
+    console.error(e)
     return fallback
   }
 }

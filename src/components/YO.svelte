@@ -4,14 +4,14 @@
 </script>
 
 <p>
-  西暦<input type="number" class="form" bind:value />年において，山Dは{#if delta < 0}
+  西暦<input type="number" bind:value />年において，山Dは{#if delta < 0}
     まだ生まれていません。{:else}<strong>{delta}</strong>歳です。{/if}{#if delta >= 200}
     おそらく死んでいます。
   {/if}
 </p>
 
 <style>
-  .form {
+  input {
     width: 6em;
     margin: 0 0.3em;
   }
