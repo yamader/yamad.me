@@ -1,5 +1,5 @@
 ---
-layout: ~/layouts/Layout.astro
+layout: ~/components/Layout.astro
 title: Something
 description: なにか
 ---

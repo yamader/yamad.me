@@ -1,0 +1,61 @@
+.hh {
+  width: 100%;
+  height: 0.2rem;
+}
+
+.vv {
+  width: 0.2rem;
+  height: 100%;
+}
+
+.window {
+  display: flex;
+  background: #333a;
+  border: 1px solid #6666;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  transform: scale(0.9);
+  opacity: 0;
+  transition:
+    transform 250ms,
+    opacity 250ms;
+
+  &.active {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.mid {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  margin-bottom: 0.2rem;
+  line-height: 0.9;
+  font-size: 0.9em;
+  user-select: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.5em;
+  background: transparent;
+  color: white;
+
+  &:hover {
+    background: #fff4;
+  }
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-radius: 0.3rem;
+  overflow: auto;
+}

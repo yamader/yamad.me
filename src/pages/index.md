@@ -1,5 +1,5 @@
 ---
-layout: ~/layouts/Layout.astro
+layout: ~/components/Layout.astro
 realTitle: YamaD.me
 ---
 

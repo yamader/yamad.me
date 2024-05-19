@@ -2,16 +2,13 @@
   "name": "yamad.me",
   "version": "2.0.4",
   "dependencies": {
-    "@builder.io/qwik": "1.5.4",
     "katex": "0.16.10",
-    "qwik-transition": "0.0.7",
-    "svelte": "4.2.17"
+    "solid-js": "1.8.17"
   },
   "devDependencies": {
     "@astrojs/check": "0.7.0",
     "@astrojs/mdx": "3.0.0",
-    "@astrojs/svelte": "5.4.0",
-    "@qwikdev/astro": "0.5.15",
+    "@astrojs/solid-js": "4.2.0",
     "astro": "4.8.6",
     "badgen": "3.2.3",
     "js-beautify": "1.15.1",
@@ -19,7 +16,6 @@
     "prettier": "3.2.5",
     "prettier-plugin-astro": "0.13.0",
     "prettier-plugin-organize-imports": "3.2.4",
-    "prettier-plugin-svelte": "3.2.3",
     "rehype-katex": "7.0.0",
     "remark-math": "6.0.0"
   },

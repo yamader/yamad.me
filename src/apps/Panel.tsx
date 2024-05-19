@@ -1,7 +1,6 @@
-import { component$ } from "@builder.io/qwik"
 import Window from "~/components/Window"
 
-export default component$(() => {
+export default function Panel() {
   return (
     <Window>
       <p>
@@ -13,4 +12,4 @@ export default component$(() => {
       </p>
     </Window>
   )
-})
+}

@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from "astro:transitions"
 import EasterEgg from "~/components/EasterEgg"
 import Header from "~/components/Header.astro"
 
@@ -15,9 +14,6 @@ const {
   description = "山Dのウェブサイト",
   noRobots,
 } = Astro.props.frontmatter || Astro.props
-
-// <html lang="ja" transition:animate="none">
-// <ViewTransitions />
 ---
 
 <html lang="ja">
@@ -44,50 +40,50 @@ const {
         <small>&copy; 2020-2024 YamaD</small>
       </footer>
     </main>
-    <EasterEgg transition:persist />
-
-    <style is:global>
-      html {
-        background: black;
-        color: white;
-      }
-
-      body {
-        display: flex;
-        margin: 0;
-      }
-
-      main {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 48rem;
-        overflow: hidden;
-        background: #222;
-
-        @media (width > 48rem) {
-          height: 100%; /* fit-content */
-          margin: 1.5rem auto;
-          border: 1px solid #383838;
-          border-radius: 0.5rem;
-        }
-      }
-
-      footer {
-        margin-top: auto;
-        padding: 0.5rem 0;
-        text-align: center;
-      }
-
-      .container {
-        display: flex;
-        flex-direction: column;
-        padding: 0 1rem;
-
-        & > :first-child {
-          margin-top: 1rem;
-        }
-      }
-    </style>
+    <EasterEgg client:idle />
   </body>
 </html>
+
+<style is:global>
+  html {
+    background: black;
+    color: white;
+  }
+
+  body {
+    display: flex;
+    margin: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 48rem;
+    overflow: hidden;
+    background: #222;
+
+    @media (width > 48rem) {
+      height: 100%; /* fit-content */
+      margin: 1.5rem auto;
+      border: 1px solid #383838;
+      border-radius: 0.5rem;
+    }
+  }
+
+  footer {
+    margin-top: auto;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+
+    & > :first-child {
+      margin-top: 1rem;
+    }
+  }
+</style>
