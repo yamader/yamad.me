@@ -7,14 +7,14 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.7.0",
-    "@astrojs/mdx": "3.0.0",
+    "@astrojs/mdx": "3.0.1",
     "@astrojs/solid-js": "4.2.0",
-    "astro": "4.8.6",
+    "astro": "4.9.1",
     "badgen": "3.2.3",
     "js-beautify": "1.15.1",
-    "lightningcss": "1.25.0",
+    "lightningcss": "1.25.1",
     "prettier": "3.2.5",
-    "prettier-plugin-astro": "0.13.0",
+    "prettier-plugin-astro": "0.14.0",
     "prettier-plugin-organize-imports": "3.2.4",
     "rehype-katex": "7.0.0",
     "remark-math": "6.0.0"
