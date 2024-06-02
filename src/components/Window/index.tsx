@@ -22,13 +22,13 @@ export default function Window(props: {
   const [active, setActive] = activeSignal
 
   const w = createMutable({
-    grab: false,
     w: initw,
     h: inith,
     x: initx,
     y: inity,
-    dx: 0,
-    dy: 0,
+    grab: false,
+    grabX: 0,
+    grabY: 0,
   })
 
   createEffect(() => {
@@ -41,8 +41,8 @@ export default function Window(props: {
   onMount(() => {
     document.addEventListener("mousemove", e => {
       if (w.grab) {
-        w.x = Math.max(0, e.pageX - w.dx)
-        w.y = Math.max(0, e.pageY - w.dy)
+        w.x = Math.max(0, e.clientX - w.grabX)
+        w.y = Math.max(0, e.clientY - w.grabY)
       }
     })
     document.addEventListener("mouseup", () => {
@@ -52,7 +52,7 @@ export default function Window(props: {
 
   return (
     <div
-      class={`abs blur ${styles.window}`}
+      class={`fixed blur ${styles.window}`}
       classList={{ [styles.active!]: active() }}
       style={{
         width: w.w + "px",
@@ -73,7 +73,7 @@ export default function Window(props: {
             onMouseDown={e => {
               w.grab = true
               // @ts-ignore wtf
-              ;[w.dx, w.dy] = [e.offsetX || e.layerX, e.offsetY || e.layerY]
+              ;[w.grabX, w.grabY] = [e.offsetX || e.layerX, e.offsetY || e.layerY]
             }}
             style={{ flex: 1 }}>
             {props.title}
