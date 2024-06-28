@@ -12,6 +12,7 @@ description: なにか
 
 ### 車輪の再発明シリーズ
 
+- 載せられるようなものがない……。
 <!--
 - [yamadOS](/software/yamados/): OS
 - [c1](/software/c1/): コンパイラ
