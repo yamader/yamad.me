@@ -2,20 +2,20 @@
   "name": "yamad.me",
   "version": "2.0.4",
   "dependencies": {
-    "katex": "0.16.10",
-    "solid-js": "1.8.17"
+    "katex": "0.16.11",
+    "solid-js": "1.8.18"
   },
   "devDependencies": {
     "@astrojs/check": "0.7.0",
     "@astrojs/mdx": "3.1.2",
     "@astrojs/solid-js": "4.4.0",
-    "astro": "4.11.1",
+    "astro": "4.11.3",
     "badgen": "3.2.3",
     "js-beautify": "1.15.1",
     "lightningcss": "1.25.1",
     "prettier": "3.3.2",
     "prettier-plugin-astro": "0.14.0",
-    "prettier-plugin-organize-imports": "3.2.4",
+    "prettier-plugin-organize-imports": "4.0.0",
     "rehype-katex": "7.0.0",
     "remark-math": "6.0.0"
   },
