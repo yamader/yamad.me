@@ -19,6 +19,8 @@ export default function YO() {
       年において，山Dは
       {delta() < 0 ? (
         <>まだ生まれていません。</>
+      ) : year() == 114514 ? (
+        <>イキスギです。</>
       ) : (
         <>
           <strong>{delta()}</strong>歳です。

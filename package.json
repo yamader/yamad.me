@@ -3,20 +3,20 @@
   "version": "2.0.4",
   "dependencies": {
     "katex": "0.16.11",
-    "solid-js": "1.8.18"
+    "solid-js": "1.8.22"
   },
   "devDependencies": {
-    "@astrojs/check": "0.7.0",
-    "@astrojs/mdx": "3.1.2",
-    "@astrojs/solid-js": "4.4.0",
-    "astro": "4.11.3",
+    "@astrojs/check": "0.9.3",
+    "@astrojs/mdx": "3.1.5",
+    "@astrojs/solid-js": "4.4.1",
+    "astro": "4.15.4",
     "badgen": "3.2.3",
     "js-beautify": "1.15.1",
-    "lightningcss": "1.25.1",
-    "prettier": "3.3.2",
-    "prettier-plugin-astro": "0.14.0",
+    "lightningcss": "1.26.0",
+    "prettier": "3.3.3",
+    "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-organize-imports": "4.0.0",
-    "rehype-katex": "7.0.0",
+    "rehype-katex": "7.0.1",
     "remark-math": "6.0.0"
   },
   "scripts": {
