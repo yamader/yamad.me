@@ -1,6 +1,5 @@
 import mdx from "@astrojs/mdx"
-import svelte from "@astrojs/svelte"
-import qwikdev from "@qwikdev/astro"
+import solid from "@astrojs/solid-js"
 import { defineConfig, passthroughImageService } from "astro/config"
 import rehypeKatex from "rehype-katex"
 import remarkMath from "remark-math"
@@ -16,7 +15,7 @@ export default defineConfig({
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex],
   },
-  integrations: [mdx(), svelte(), qwikdev()],
+  integrations: [mdx(), solid()],
   vite: {
     css: { transformer: "lightningcss" },
     // build: { cssMinify: "lightningcss" },

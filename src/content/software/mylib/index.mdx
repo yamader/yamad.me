@@ -5,7 +5,7 @@ description: オレオレライブラリ
 
 import GitHub from "~/components/badges/GitHub.astro"
 
-# mylib : オレオレライブラリ
+# mylib: オレオレライブラリ
 
 <GitHub repo="yamader/mylib" />
 
@@ -23,16 +23,16 @@ import GitHub from "~/components/badges/GitHub.astro"
 ### [argparse.hh](https://github.com/yamader/mylib/tree/master/cxx/argparse.hh): コマンドライン引数解析
 
 ```c++
-auto main(int argc, char* argv[]) -> int {"{"}
-  Args args{"{"}argc, argv{"}"};
+auto main(int argc, char* argv[]) -> int {
+  Args args{argc, argv};
   args.def_flag("help", "--help", "-h");
   args.def("file", "--file", "-f");
   args.parse();
 
-  if(args["help"].flag()) {"{"}
-    cout {"<<"} "This is the help.\n";
+  if(args["help"].flag()) {
+    cout << "This is the help.\n";
     return 0;
-  {"}"}
+  }
 
   auto fpath = args["file"].str();
   ...
@@ -46,7 +46,7 @@ auto main(int argc, char* argv[]) -> int {"{"}
 ### [nullstream.hh](https://github.com/yamader/mylib/tree/master/cxx/nullstream.hh): 虚無stream
 
 ```c++
-NullStream() {"<<"} u8"虚無へ出力"s;
+NullStream() << u8"虚無へ出力"s;
 ```
 
 ## D
@@ -62,7 +62,7 @@ NullStream() {"<<"} u8"虚無へ出力"s;
 ### [reflection.d](https://github.com/yamader/mylib/tree/master/d/reflection.d): ランタイム時のリフレクション
 
 ```d
-struct S {"{"} int i; {"}"}
+struct S { int i; }
 S s;
 s.set("i", 123);
 ```

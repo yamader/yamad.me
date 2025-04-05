@@ -1,5 +1,8 @@
-import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik"
-import Launcher from "~/apps/Launcher"
+import { createSignal, lazy, onMount } from "solid-js"
+
+declare global {
+  var _easter_init: boolean
+}
 
 const command = [
   "ArrowUp",
@@ -14,24 +17,31 @@ const command = [
   "a",
 ]
 
-export default component$(() => {
-  const cur = useSignal(0)
-  const easter = useSignal(false)
+export default function EasterEgg() {
+  const [cur, setCur] = createSignal(0)
+  const [easter, setEaster] = createSignal(false)
+  const [load, setLoad] = createSignal(false)
 
-  useVisibleTask$(() => {
+  onMount(() => {
+    if (globalThis._easter_init) return
+    globalThis._easter_init = true
+
     console.log("%cこんにちは!", "color: red; font-size: 8em; font-weight: bold;")
 
     document.addEventListener("keydown", e => {
-      if (e.key == command[cur.value++]) {
-        if (cur.value == command.length) {
-          easter.value = true
-          cur.value = 0
+      if (e.key == command[cur()]) {
+        setCur(cur => cur + 1)
+        if (cur() > command.length / 2) setLoad(true)
+        if (cur() == command.length) {
+          setEaster(true)
+          setCur(0)
         }
       } else {
-        cur.value = 0
+        setCur(0)
       }
     })
   })
 
-  return <Launcher launchSignal={easter} />
-})
+  const Launcher = lazy(() => import("~/apps/Launcher"))
+  return <>{load() && <Launcher activeSignal={[easter, setEaster]} />}</>
+}

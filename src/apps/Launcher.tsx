@@ -1,10 +1,10 @@
-import { component$, type Signal } from "@builder.io/qwik"
+import { type Signal } from "solid-js"
 import Window from "~/components/Window"
 
-export default component$(({ launchSignal }: { launchSignal: Signal<boolean> }) => {
+export default function Launcher(props: { activeSignal: Signal<boolean> }) {
   return (
-    <Window active={launchSignal}>
+    <Window activeSignal={props.activeSignal}>
       <p>hello!</p>
     </Window>
   )
-})
+}

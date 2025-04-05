@@ -3,5 +3,5 @@
   "semi": false,
   "bracketSameLine": true,
   "arrowParens": "avoid",
-  "plugins": ["prettier-plugin-astro", "prettier-plugin-organize-imports", "prettier-plugin-svelte"]
+  "plugins": ["prettier-plugin-astro", "prettier-plugin-organize-imports"]
 }
