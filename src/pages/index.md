@@ -1,5 +1,5 @@
 ---
-layout: ~/layouts/Layout.astro
+layout: ~/components/Layout.astro
 realTitle: YamaD.me
 ---
 
@@ -39,7 +39,7 @@ Master key [fingerprint](openpgp4fpr:0E3E1098B3129A37AFE6A5CF596E6A41B5517736):
 - DNS CERT record
 
 ```
-% gpg --fetch-keys https://yamad.me/pub.asc
-もしくは
 % gpg --locate-keys me(at)dyama.net
+もしくは
+% gpg --fetch-keys https://yamad.me/pub.asc
 ```
