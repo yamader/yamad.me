@@ -2,7 +2,7 @@ import { createSignal } from "solid-js"
 
 export default function YO() {
   const [year, setYear] = createSignal(new Date().getFullYear())
-  const delta = () => year() - 2005
+  const delta = () => Math.floor(year() - 2005)
 
   return (
     <p>

@@ -10,6 +10,14 @@
   image-rendering: crisp-edges;
 }
 
+.cloak {
+  display: none;
+}
+
+.reveal:hover .cloak {
+  display: initial;
+}
+
 /* https://stackoverflow.com/a/14424029 */
 
 .tree {
